@@ -1,0 +1,22 @@
+1592144614.070 : umgr_staging_output.0000 : 11589 : 140308239267584 : INFO     : connect pub to state_pubsub: tcp://172.25.139.3:44560
+1592144614.071 : umgr_staging_output.0000 : 11589 : 140308239267584 : DEBUG    : registered publisher for state_pubsub
+1592144615.076 : umgr_staging_output.0000 : 11589 : 140308239267584 : INFO     : connect pub to control_pubsub: tcp://172.25.139.3:41259
+1592144615.077 : umgr_staging_output.0000 : 11589 : 140308239267584 : DEBUG    : registered publisher for control_pubsub
+1592144616.082 : umgr_staging_output.0000 : 11589 : 140308239267584 : INFO     : connect sub to control_pubsub: tcp://172.25.139.3:43703
+1592144616.084 : umgr_staging_output.0000 : 11589 : 140308239267584 : DEBUG    : ~~ control_pubsub: control_pubsub
+1592144617.089 : umgr_staging_output.0000 : 11589 : 140308239267584 : INFO     : connect get to umgr_staging_output_queue: tcp://172.25.139.3:39174
+1592144617.099 : umgr_staging_output.0000 : 11589 : 140308239267584 : DEBUG    : registered input umgr_staging_output.0000.work.UMGR_STAGING_OUTPUT_PENDING
+1592144617.100 : umgr_staging_output.0000 : 11589 : 140308239267584 : DEBUG    : umgr_staging_output.0000 register input UMGR_STAGING_OUTPUT_PENDING: umgr_staging_output.0000.work.UMGR_STAGING_OUTPUT_PENDING
+1592144617.100 : umgr_staging_output.0000 : 11589 : 140308239267584 : DEBUG    : registered worker work [UMGR_STAGING_OUTPUT_PENDING]
+1592144618.180 : umgr_staging_output.0000 : 11589 : 140308362831616 : DEBUG    : start heartbeat
+1592144619.185 : umgr_staging_output.0000 : 11589 : 140308362831616 : INFO     : connect sub to heartbeat: tcp://172.25.139.3:40942
+1592144619.187 : umgr_staging_output.0000 : 11589 : 140308362831616 : DEBUG    : ~~ heartbeat: heartbeat
+1592144624.344 : umgr_staging_output.0000 : 11589 : 140307974838016 : DEBUG    : command incoming: {'cmd': 'add_pilots', 'arg': {'pilots': [{'session': 'rp.session.js-17-185.jetstream-cloud.org.aymen.018427.0013', 'pmgr': 'pmgr.0000', 'uid': 'pilot.0000', 'type': 'pilot', 'state': 'PMGR_LAUNCHING_PENDING', 'log': None, 'stdout': None, 'stderr': None, 'resource': 'xsede.comet_ssh', 'resource_sandbox': 'sftp://comet.sdsc.xsede.org/oasis/scratch/comet/aymen/temp_project/radical.pilot.sandbox', 'session_sandbox': 'sftp://comet.sdsc.xsede.org/oasis/scratch/comet/aymen/temp_project/radical.pilot.sandbox/rp.session.js-17-185.jetstream-cloud.org.aymen.018427.0013', 'pilot_sandbox': 'sftp://comet.sdsc.xsede.org/oasis/scratch/comet/aymen/temp_project/radical.pilot.sandbox/rp.session.js-17-185.jetstream-cloud.org.aymen.018427.0013/pilot.0000/', 'client_sandbox': '/home/aymen/RADICAL/radical.pilot/examples', 'js_url': 'slurm+ssh://comet.sdsc.xsede.org/', 'js_hop': 'ssh://comet.sdsc.xsede.org/', 'description': {'resource': 'xsede.comet_ssh', 'access_schema': 'ssh', 'runtime': 10, 'app_comm': [], 'sandbox': None, 'cores': 24, 'gpus': 0, 'queue': 'debug', 'project': 'unc100', 'cleanup': False, 'candidate_hosts': [], 'exit_on_error': True, 'input_staging': [], 'output_staging': [], 'layout': 'default'}, 'resource_details': None}], 'umgr': 'umgr.0000'}}
+1592144624.344 : umgr_staging_output.0000 : 11589 : 140307974838016 : DEBUG    : command ignored: add_pilots
+1592145024.849 : umgr_staging_output.0000 : 11589 : 140307974838016 : DEBUG    : command incoming: {'cmd': 'cancel_pilots', 'arg': {'pmgr': 'pmgr.0000', 'uids': ['pilot.0000']}}
+1592145024.850 : umgr_staging_output.0000 : 11589 : 140307974838016 : DEBUG    : command ignored: cancel_pilots
+1592145084.302 : umgr_staging_output.0000 : 11589 : 140307723187968 : WARNING  : hb umgr_staging_output.0000[cmgr.0002]: 1592145084.3 - 1592145023.8 > 60: timeout
+1592145084.415 : umgr_staging_output.0000 : 11589 : 140307723187968 : INFO     : stop umgr_staging_output.0000 (11589 : Thread-3) [__main__.hb_term_cb]
+1592145084.416 : umgr_staging_output.0000 : 11589 : 140307723187968 : DEBUG    : _finalize()
+1592145084.416 : umgr_staging_output.0000 : 11589 : 140307723187968 : DEBUG    : umgr_staging_output.0000 close prof
+1592145084.422 : umgr_staging_output.0000 : 11589 : 140307723187968 : WARNING  : hb fail cmgr.0002: fatal (11589)

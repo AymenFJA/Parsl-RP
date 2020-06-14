@@ -1,0 +1,555 @@
+1592142543.834 : pmgr_launching.0000  : 6302  : 139631874156288 : INFO     : connect pub to state_pubsub: tcp://172.25.139.3:34645
+1592142543.836 : pmgr_launching.0000  : 6302  : 139631874156288 : DEBUG    : registered publisher for state_pubsub
+1592142544.841 : pmgr_launching.0000  : 6302  : 139631874156288 : INFO     : connect pub to control_pubsub: tcp://172.25.139.3:40295
+1592142544.842 : pmgr_launching.0000  : 6302  : 139631874156288 : DEBUG    : registered publisher for control_pubsub
+1592142545.846 : pmgr_launching.0000  : 6302  : 139631874156288 : INFO     : connect sub to control_pubsub: tcp://172.25.139.3:34949
+1592142545.848 : pmgr_launching.0000  : 6302  : 139631874156288 : DEBUG    : ~~ control_pubsub: control_pubsub
+1592142546.852 : pmgr_launching.0000  : 6302  : 139631874156288 : INFO     : connect get to pmgr_launching_queue: tcp://172.25.139.3:42442
+1592142546.863 : pmgr_launching.0000  : 6302  : 139631874156288 : DEBUG    : registered input pmgr_launching.0000.work.PMGR_LAUNCHING_PENDING
+1592142546.864 : pmgr_launching.0000  : 6302  : 139631874156288 : DEBUG    : pmgr_launching.0000 register input PMGR_LAUNCHING_PENDING: pmgr_launching.0000.work.PMGR_LAUNCHING_PENDING
+1592142546.864 : pmgr_launching.0000  : 6302  : 139631874156288 : DEBUG    : registered worker work [PMGR_LAUNCHING_PENDING]
+1592142546.864 : pmgr_launching.0000  : 6302  : 139631874156288 : DEBUG    : START: pmgr_launching.0000 register idler pmgr_launching.0000.idler._pilot_watcher_cb
+1592142546.865 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : start idle thread: <bound method Default._pilot_watcher_cb of <radical.pilot.pmgr.launching.default.Default object at 0x7efe94427f90>>
+1592142546.865 : pmgr_launching.0000  : 6302  : 139631874156288 : DEBUG    : pmgr_launching.0000 registered idler pmgr_launching.0000.idler._pilot_watcher_cb
+1592142546.868 : pmgr_launching.0000  : 6302  : 139631874156288 : DEBUG    : ~~ control_pubsub: control_pubsub
+1592142546.870 : pmgr_launching.0000  : 6302  : 139631874156288 : INFO     : ('1.4.1', '1.4.1', None, None, 'radical.pilot-1.4.1.tar.gz', '/home/aymen/ve/parsl-env/lib/python3.7/site-packages/radical/pilot/pmgr/launching/../..//radical.pilot-1.4.1.tar.gz')
+1592142546.873 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: []
+1592142547.944 : pmgr_launching.0000  : 6302  : 139631997720320 : DEBUG    : start heartbeat
+1592142548.949 : pmgr_launching.0000  : 6302  : 139631997720320 : INFO     : connect sub to heartbeat: tcp://172.25.139.3:34607
+1592142548.950 : pmgr_launching.0000  : 6302  : 139631997720320 : DEBUG    : ~~ heartbeat: heartbeat
+1592142556.897 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: []
+1592142566.920 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: []
+1592142576.943 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: []
+1592142579.209 : pmgr_launching.0000  : 6302  : 139631815407360 : DEBUG    : command incoming: {'cmd': 'add_pilots', 'arg': {'pilots': [{'session': 'rp.session.js-17-185.jetstream-cloud.org.aymen.018427.0011', 'pmgr': 'pmgr.0000', 'uid': 'pilot.0000', 'type': 'pilot', 'state': 'PMGR_LAUNCHING_PENDING', 'log': None, 'stdout': None, 'stderr': None, 'resource': 'xsede.comet_ssh', 'resource_sandbox': 'sftp://comet.sdsc.xsede.org/oasis/scratch/comet/aymen/temp_project/radical.pilot.sandbox', 'session_sandbox': 'sftp://comet.sdsc.xsede.org/oasis/scratch/comet/aymen/temp_project/radical.pilot.sandbox/rp.session.js-17-185.jetstream-cloud.org.aymen.018427.0011', 'pilot_sandbox': 'sftp://comet.sdsc.xsede.org/oasis/scratch/comet/aymen/temp_project/radical.pilot.sandbox/rp.session.js-17-185.jetstream-cloud.org.aymen.018427.0011/pilot.0000/', 'client_sandbox': '/home/aymen/RADICAL/radical.pilot/examples', 'js_url': 'slurm+ssh://comet.sdsc.xsede.org/', 'js_hop': 'ssh://comet.sdsc.xsede.org/', 'description': {'resource': 'xsede.comet_ssh', 'access_schema': 'ssh', 'runtime': 10, 'app_comm': [], 'sandbox': None, 'cores': 24, 'gpus': 0, 'queue': 'debug', 'project': 'unc100', 'cleanup': False, 'candidate_hosts': [], 'exit_on_error': True, 'input_staging': [], 'output_staging': [], 'layout': 'default'}, 'resource_details': None}], 'umgr': 'umgr.0000'}}
+1592142579.209 : pmgr_launching.0000  : 6302  : 139631815407360 : DEBUG    : command ignored: add_pilots
+1592142579.209 : pmgr_launching.0000  : 6302  : 139631815407360 : DEBUG    : launcher got {'cmd': 'add_pilots', 'arg': {'pilots': [{'session': 'rp.session.js-17-185.jetstream-cloud.org.aymen.018427.0011', 'pmgr': 'pmgr.0000', 'uid': 'pilot.0000', 'type': 'pilot', 'state': 'PMGR_LAUNCHING_PENDING', 'log': None, 'stdout': None, 'stderr': None, 'resource': 'xsede.comet_ssh', 'resource_sandbox': 'sftp://comet.sdsc.xsede.org/oasis/scratch/comet/aymen/temp_project/radical.pilot.sandbox', 'session_sandbox': 'sftp://comet.sdsc.xsede.org/oasis/scratch/comet/aymen/temp_project/radical.pilot.sandbox/rp.session.js-17-185.jetstream-cloud.org.aymen.018427.0011', 'pilot_sandbox': 'sftp://comet.sdsc.xsede.org/oasis/scratch/comet/aymen/temp_project/radical.pilot.sandbox/rp.session.js-17-185.jetstream-cloud.org.aymen.018427.0011/pilot.0000/', 'client_sandbox': '/home/aymen/RADICAL/radical.pilot/examples', 'js_url': 'slurm+ssh://comet.sdsc.xsede.org/', 'js_hop': 'ssh://comet.sdsc.xsede.org/', 'description': {'resource': 'xsede.comet_ssh', 'access_schema': 'ssh', 'runtime': 10, 'app_comm': [], 'sandbox': None, 'cores': 24, 'gpus': 0, 'queue': 'debug', 'project': 'unc100', 'cleanup': False, 'candidate_hosts': [], 'exit_on_error': True, 'input_staging': [], 'output_staging': [], 'layout': 'default'}, 'resource_details': None}], 'umgr': 'umgr.0000'}}
+1592142579.273 : pmgr_launching.0000  : 6302  : 139631874156288 : DEBUG    : got pilot (pilot.0000)
+1592142579.273 : pmgr_launching.0000  : 6302  : 139631874156288 : DEBUG    : advance bulk: 1 [False, True]
+1592142579.273 : pmgr_launching.0000  : 6302  : 139631874156288 : INFO     : Launching pilots on xsede.comet_ssh: ['pilot.0000']
+1592142579.274 : pmgr_launching.0000  : 6302  : 139631874156288 : DEBUG    : RCFG:
+The Comet HPC resource at SDSC 'HPC for the 99%%' (http://www.sdsc.edu/services/hpc/hpc_systems.html#comet).
+The Comet HPC resource at SDSC 'HPC for the 99%' (http://www.sdsc.edu/services/hpc/hpc_systems.html#comet).
+1592142580.427 : pmgr_launching.0000  : 6302  : 139631874156288 : DEBUG    : === gpus_per_node 0: 0
+1592142580.428 : pmgr_launching.0000  : 6302  : 139631874156288 : DEBUG    : 24
+1592142580.429 : pmgr_launching.0000  : 6302  : 139631874156288 : DEBUG    : {'agent_launch_method': 'SSH',
+ 'agent_scheduler': 'CONTINUOUS',
+ 'agent_spawner': 'POPEN',
+ 'cores_per_node': 24,
+ 'cu_tmp': '/scratch/$USER/$SLURM_JOBID',
+ 'default_queue': 'compute',
+ 'default_remote_workdir': '/oasis/scratch/comet/$USER/temp_project',
+ 'description': "The Comet HPC resource at SDSC 'HPC for the 99%' "
+                '(http://www.sdsc.edu/services/hpc/hpc_systems.html#comet).',
+ 'filesystem_endpoint': 'sftp://comet.sdsc.xsede.org/',
+ 'gsissh': {'filesystem_endpoint': 'gsisftp://comet.sdsc.xsede.org/',
+            'job_manager_endpoint': 'slurm+gsissh://comet.sdsc.xsede.org/'},
+ 'job_manager_endpoint': 'slurm+ssh://comet.sdsc.xsede.org/',
+ 'lfs_path_per_node': '/scratch/$USER/$SLURM_JOB_ID',
+ 'lfs_size_per_node': 176105,
+ 'mandatory_args': ['project'],
+ 'mpi_launch_method': 'IBRUN',
+ 'notes': 'Always set the ``project`` attribute in the ComputePilotDescription '
+          'or the pilot will fail.',
+ 'pre_bootstrap_0': ['module load python'],
+ 'python_dist': 'default',
+ 'resource_manager': 'SLURM',
+ 'rp_version': 'local',
+ 'schemas': ['ssh', 'gsissh'],
+ 'ssh': {'filesystem_endpoint': 'sftp://comet.sdsc.xsede.org/',
+         'job_manager_endpoint': 'slurm+ssh://comet.sdsc.xsede.org/'},
+ 'task_launch_method': 'SSH',
+ 'valid_roots': ['/oasis/scratch/comet'],
+ 'virtenv_mode': 'create'}
+1592142580.430 : pmgr_launching.0000  : 6302  : 139631874156288 : INFO     : Read agent config file: /home/aymen/ve/parsl-env/lib/python3.7/site-packages/radical/pilot/pmgr/launching/../..//configs/agent_default.json
+1592142580.434 : pmgr_launching.0000  : 6302  : 139631874156288 : DEBUG    : Write agent cfg to '/tmp/rp.agent_cfg.0qxti56n'.
+1592142580.438 : pmgr_launching.0000  : 6302  : 139631874156288 : DEBUG    : {'agent_launch_method': 'SSH',
+ 'app_comm': [],
+ 'bridges': {'agent_executing_queue': {'bulk_size': 0,
+                                       'kind': 'queue',
+                                       'log_level': 'error',
+                                       'stall_hwm': 0},
+             'agent_schedule_pubsub': {'kind': 'pubsub', 'log_level': 'error'},
+             'agent_scheduling_queue': {'bulk_size': 0,
+                                        'kind': 'queue',
+                                        'log_level': 'error',
+                                        'stall_hwm': 0},
+             'agent_staging_input_queue': {'bulk_size': 0,
+                                           'kind': 'queue',
+                                           'log_level': 'error',
+                                           'stall_hwm': 0},
+             'agent_staging_output_queue': {'bulk_size': 0,
+                                            'kind': 'queue',
+                                            'log_level': 'error',
+                                            'stall_hwm': 0},
+             'agent_unschedule_pubsub': {'kind': 'pubsub',
+                                         'log_level': 'error'},
+             'control_pubsub': {'kind': 'pubsub', 'log_level': 'error'},
+             'funcs_req_queue': {'bulk_size': 1,
+                                 'kind': 'queue',
+                                 'log_level': 'error',
+                                 'stall_hwm': 0},
+             'funcs_res_queue': {'bulk_size': 1,
+                                 'kind': 'queue',
+                                 'log_level': 'error',
+                                 'stall_hwm': 0},
+             'state_pubsub': {'kind': 'pubsub', 'log_level': 'error'}},
+ 'bulk_collection_size': 1024,
+ 'bulk_collection_time': 1.0,
+ 'bulk_size': 1024,
+ 'bulk_time': 1.0,
+ 'components': {'agent_executing': {'count': 1},
+                'agent_scheduling': {'count': 1},
+                'agent_staging_input': {'count': 1},
+                'agent_staging_output': {'count': 1},
+                'update': {'count': 1}},
+ 'cores': 24,
+ 'cores_per_node': 24,
+ 'cu_post_exec': None,
+ 'cu_pre_exec': None,
+ 'cu_tmp': '/scratch/$USER/$SLURM_JOBID',
+ 'db_poll_sleeptime': 2.0,
+ 'dburl': 'mongodb://aymen:7SrUNXq3X64nNFRk@129.114.17.185:27017/radical3',
+ 'debug': 10,
+ 'export_to_cu': None,
+ 'gpus': 0,
+ 'gpus_per_node': 0,
+ 'heartbeat': {'interval': 1.0, 'timeout': 60.0},
+ 'lfs_path_per_node': '/scratch/$USER/$SLURM_JOB_ID',
+ 'lfs_size_per_node': 176105,
+ 'logdir': '.',
+ 'mode': 'shared',
+ 'mpi_launch_method': 'IBRUN',
+ 'owner': 'agent.0',
+ 'pid': 'pilot.0000',
+ 'pilot_sandbox': '/oasis/scratch/comet/aymen/temp_project/radical.pilot.sandbox/rp.session.js-17-185.jetstream-cloud.org.aymen.018427.0011/pilot.0000/',
+ 'pmgr': 'pmgr.0000',
+ 'resource_cfg': {'agent_launch_method': 'SSH',
+                  'agent_scheduler': 'CONTINUOUS',
+                  'agent_spawner': 'POPEN',
+                  'cores_per_node': 24,
+                  'cu_tmp': '/scratch/$USER/$SLURM_JOBID',
+                  'default_queue': 'compute',
+                  'default_remote_workdir': '/oasis/scratch/comet/$USER/temp_project',
+                  'description': "The Comet HPC resource at SDSC 'HPC for the "
+                                 "99%' "
+                                 '(http://www.sdsc.edu/services/hpc/hpc_systems.html#comet).',
+                  'filesystem_endpoint': 'sftp://comet.sdsc.xsede.org/',
+                  'gsissh': {'filesystem_endpoint': 'gsisftp://comet.sdsc.xsede.org/',
+                             'job_manager_endpoint': 'slurm+gsissh://comet.sdsc.xsede.org/'},
+                  'job_manager_endpoint': 'slurm+ssh://comet.sdsc.xsede.org/',
+                  'lfs_path_per_node': '/scratch/$USER/$SLURM_JOB_ID',
+                  'lfs_size_per_node': 176105,
+                  'mandatory_args': ['project'],
+                  'mpi_launch_method': 'IBRUN',
+                  'notes': 'Always set the ``project`` attribute in the '
+                           'ComputePilotDescription or the pilot will fail.',
+                  'pre_bootstrap_0': ['module load python'],
+                  'python_dist': 'default',
+                  'resource_manager': 'SLURM',
+                  'rp_version': 'local',
+                  'schemas': ['ssh', 'gsissh'],
+                  'ssh': {'filesystem_endpoint': 'sftp://comet.sdsc.xsede.org/',
+                          'job_manager_endpoint': 'slurm+ssh://comet.sdsc.xsede.org/'},
+                  'task_launch_method': 'SSH',
+                  'valid_roots': ['/oasis/scratch/comet'],
+                  'virtenv_mode': 'create'},
+ 'resource_manager': 'SLURM',
+ 'resource_sandbox': '/oasis/scratch/comet/aymen/temp_project/radical.pilot.sandbox',
+ 'runtime': 10,
+ 'scheduler': 'CONTINUOUS',
+ 'session_sandbox': '/oasis/scratch/comet/aymen/temp_project/radical.pilot.sandbox/rp.session.js-17-185.jetstream-cloud.org.aymen.018427.0011',
+ 'sid': 'rp.session.js-17-185.jetstream-cloud.org.aymen.018427.0011',
+ 'spawner': 'POPEN',
+ 'target': 'local',
+ 'task_launch_method': 'SSH'}
+1592142580.440 : pmgr_launching.0000  : 6302  : 139631874156288 : DEBUG    : use bootstrapper /home/aymen/ve/parsl-env/lib/python3.7/site-packages/radical/pilot/agent/bootstrap_0.sh
+1592142580.441 : pmgr_launching.0000  : 6302  : 139631874156288 : DEBUG    : Bootstrap command line: /bin/bash ["-l /oasis/scratch/comet/aymen/temp_project/radical.pilot.sandbox/rp.session.js-17-185.jetstream-cloud.org.aymen.018427.0011/bootstrap_0.sh  -d 'radical.utils-1.4.0.tar.gz:radical.saga-1.4.0.tar.gz:radical.pilot-1.4.1.tar.gz' -p 'pilot.0000' -s 'rp.session.js-17-185.jetstream-cloud.org.aymen.018427.0011' -m 'create' -r 'local' -b 'default' -g 'default' -v '/oasis/scratch/comet/aymen/temp_project/radical.pilot.sandbox/ve.xsede.comet_ssh.1.4.1' -y '10' -e 'module load python'"]
+1592142580.559 : pmgr_launching.0000  : 6302  : 139631874156288 : DEBUG    : rs.file.Directory ('sftp://comet.sdsc.xsede.org/')
+1592142589.594 : pmgr_launching.0000  : 6302  : 139631874156288 : DEBUG    : tar cmd : tar zmxvf /oasis/scratch/comet/aymen/temp_project/radical.pilot.sandbox/rp.session.js-17-185.jetstream-cloud.org.aymen.018427.0011/rp.session.js-17-185.jetstream-cloud.org.aymen.018427.0011.pmgr_launching.0000.tgz -C /oasis/scratch/comet/aymen/temp_project/radical.pilot.sandbox/rp.session.js-17-185.jetstream-cloud.org.aymen.018427.0011
+1592142591.153 : pmgr_launching.0000  : 6302  : 139631874156288 : DEBUG    : tar done: Done, bootstrap_0.sh
+pilot.0000/
+pilot.0000/pilot.0000.prof.tgz
+pilot.0000/agent.0.cfg
+pilot.0000/pilot.0000.log.tgz
+radical.pilot-1.4.1.tar.gz
+radical.saga-1.4.0.tar.gz
+radical.utils-1.4.0.tar.gz
+, 
+1592142593.708 : pmgr_launching.0000  : 6302  : 139631874156288 : DEBUG    : jd: {'Arguments': ['-l '
+               '/oasis/scratch/comet/aymen/temp_project/radical.pilot.sandbox/rp.session.js-17-185.jetstream-cloud.org.aymen.018427.0011/bootstrap_0.sh  '
+               '-d '
+               "'radical.utils-1.4.0.tar.gz:radical.saga-1.4.0.tar.gz:radical.pilot-1.4.1.tar.gz' "
+               "-p 'pilot.0000' -s "
+               "'rp.session.js-17-185.jetstream-cloud.org.aymen.018427.0011' "
+               "-m 'create' -r 'local' -b 'default' -g 'default' -v "
+               "'/oasis/scratch/comet/aymen/temp_project/radical.pilot.sandbox/ve.xsede.comet_ssh.1.4.1' "
+               "-y '10' -e 'module load python'"],
+ 'CandidateHosts': [],
+ 'Environment': {'RADICAL_PROFILE': 'TRUE'},
+ 'Error': 'bootstrap_0.err',
+ 'Executable': '/bin/bash',
+ 'FileTransfer': [],
+ 'Name': 'pilot.0000',
+ 'Output': 'bootstrap_0.out',
+ 'ProcessesPerHost': 24,
+ 'Project': 'unc100',
+ 'Queue': 'debug',
+ 'SPMDVariation': None,
+ 'TotalCPUCount': 24,
+ 'TotalGPUCount': 0,
+ 'WallTimeLimit': 10,
+ 'WorkingDirectory': '/oasis/scratch/comet/aymen/temp_project/radical.pilot.sandbox/rp.session.js-17-185.jetstream-cloud.org.aymen.018427.0011/pilot.0000/'}
+1592142596.629 : pmgr_launching.0000  : 6302  : 139631874156288 : DEBUG    : advance bulk: 1 [False, True]
+1592142596.793 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: [['Pending']]
+1592142596.952 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : saga job state: pilot.0000 Running
+1592142607.136 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: [['Running']]
+1592142607.294 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : saga job state: pilot.0000 Running
+1592142617.479 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: [['Running']]
+1592142617.638 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : saga job state: pilot.0000 Running
+1592142627.823 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: [['Running']]
+1592142627.983 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : saga job state: pilot.0000 Running
+1592142638.639 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: [['Running']]
+1592142639.183 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : saga job state: pilot.0000 Running
+1592142649.680 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: [['Running']]
+1592142650.174 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : saga job state: pilot.0000 Running
+1592142660.811 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: [['Running']]
+1592142661.356 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : saga job state: pilot.0000 Running
+1592142671.597 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: [['Running']]
+1592142672.166 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : saga job state: pilot.0000 Running
+1592142682.436 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: [['Running']]
+1592142682.977 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : saga job state: pilot.0000 Running
+1592142693.161 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: [['Running']]
+1592142693.631 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : saga job state: pilot.0000 Running
+1592142704.281 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: [['Running']]
+1592142704.801 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : saga job state: pilot.0000 Running
+1592142715.381 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: [['Running']]
+1592142715.904 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : saga job state: pilot.0000 Running
+1592142726.295 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: [['Running']]
+1592142726.858 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : saga job state: pilot.0000 Running
+1592142737.342 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: [['Running']]
+1592142737.885 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : saga job state: pilot.0000 Running
+1592142748.502 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: [['Running']]
+1592142749.085 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : saga job state: pilot.0000 Running
+1592142759.596 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: [['Running']]
+1592142759.953 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : saga job state: pilot.0000 Running
+1592142770.201 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: [['Running']]
+1592142770.729 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : saga job state: pilot.0000 Running
+1592142781.056 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: [['Running']]
+1592142781.580 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : saga job state: pilot.0000 Running
+1592142791.868 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: [['Running']]
+1592142792.411 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : saga job state: pilot.0000 Running
+1592142802.779 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: [['Running']]
+1592142803.404 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : saga job state: pilot.0000 Running
+1592142813.588 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: [['Running']]
+1592142813.747 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : saga job state: pilot.0000 Running
+1592142823.975 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: [['Running']]
+1592142824.134 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : saga job state: pilot.0000 Running
+1592142834.320 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: [['Running']]
+1592142834.481 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : saga job state: pilot.0000 Running
+1592142851.569 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: [['Running']]
+1592142851.731 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : saga job state: pilot.0000 Running
+1592142862.034 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: [['Running']]
+1592142862.193 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : saga job state: pilot.0000 Running
+1592142872.444 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: [['Running']]
+1592142872.602 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : saga job state: pilot.0000 Running
+1592142883.082 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: [['Running']]
+1592142883.242 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : saga job state: pilot.0000 Running
+1592142893.428 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: [['Running']]
+1592142893.587 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : saga job state: pilot.0000 Running
+1592142903.776 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: [['Running']]
+1592142903.936 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : saga job state: pilot.0000 Running
+1592142914.327 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: [['Running']]
+1592142914.485 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : saga job state: pilot.0000 Running
+1592142924.669 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: [['Running']]
+1592142924.827 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : saga job state: pilot.0000 Running
+1592142935.011 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: [['Running']]
+1592142935.168 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : saga job state: pilot.0000 Running
+1592142945.351 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: [['Running']]
+1592142945.510 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : saga job state: pilot.0000 Running
+1592142955.695 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: [['Running']]
+1592142955.853 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : saga job state: pilot.0000 Running
+1592142966.037 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: [['Running']]
+1592142966.196 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : saga job state: pilot.0000 Running
+1592142972.292 : pmgr_launching.0000  : 6302  : 139631815407360 : DEBUG    : command incoming: {'cmd': 'cancel_pilots', 'arg': {'pmgr': 'pmgr.0000', 'uids': ['pilot.0000']}}
+1592142972.293 : pmgr_launching.0000  : 6302  : 139631815407360 : DEBUG    : command ignored: cancel_pilots
+1592142972.294 : pmgr_launching.0000  : 6302  : 139631815407360 : DEBUG    : launcher got {'cmd': 'cancel_pilots', 'arg': {'pmgr': 'pmgr.0000', 'uids': ['pilot.0000']}}
+1592142972.294 : pmgr_launching.0000  : 6302  : 139631815407360 : INFO     : received pilot_cancel command (['pilot.0000'])
+1592142972.294 : pmgr_launching.0000  : 6302  : 139631815407360 : DEBUG    : update cancel req: pilot.0000 1592142972.2942512
+1592142976.375 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: [['Running']]
+1592142976.534 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : saga job state: pilot.0000 Running
+1592142986.727 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: [['Running']]
+1592142986.886 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : saga job state: pilot.0000 Running
+1592142997.073 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: [['Running']]
+1592142997.233 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : saga job state: pilot.0000 Running
+1592143007.421 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: [['Running']]
+1592143007.580 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : saga job state: pilot.0000 Running
+1592143017.766 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: [['Running']]
+1592143018.029 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : saga job state: pilot.0000 Running
+1592143028.215 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: [['Running']]
+1592143028.373 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : saga job state: pilot.0000 Running
+1592143038.558 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: [['Running']]
+1592143038.719 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : saga job state: pilot.0000 Running
+1592143048.908 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : bulk states: [['Running']]
+1592143049.068 : pmgr_launching.0000  : 6302  : 139631450380032 : DEBUG    : saga job state: pilot.0000 Running
+1592143052.159 : pmgr_launching.0000  : 6302  : 139631425201920 : WARNING  : hb pmgr_launching.0000[cmgr.0001]: 1592143052.2 - 1592142991.9 > 60: timeout
+1592143052.275 : pmgr_launching.0000  : 6302  : 139631425201920 : INFO     : stop pmgr_launching.0000 (6302 : Thread-4) [__main__.hb_term_cb]
+1592143052.275 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : _finalize()
+1592143052.275 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : TERM : pmgr_launching.0000 unregister idler pmgr_launching.0000.idler._pilot_watcher_cb
+1592143052.275 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : TERM : pmgr_launching.0000 unregistered idler pmgr_launching.0000.idler._pilot_watcher_cb
+1592143052.275 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : unregistered input pmgr_launching.0000.work.PMGR_LAUNCHING_PENDING
+1592143052.276 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : pmgr_launching.0000 unregister input PMGR_LAUNCHING_PENDING: pmgr_launching.0000.work.PMGR_LAUNCHING_PENDING
+1592143052.276 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : unregistered worker work [PMGR_LAUNCHING_PENDING]
+1592143052.276 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : update cancel req: pilot.0000 1592143052.2756846
+1592143052.276 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: ['pilot.0000']
+1592143052.276 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: [1592143052.2756846]
+1592143052.276 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: last cancel: 1592143052.2756846
+1592143052.276 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143052.2760217 < 1592143052.2756846 + 120
+1592143052.276 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143053.277 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143053.2773345 < 1592143052.2756846 + 120
+1592143053.278 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143054.279 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143054.2788444 < 1592143052.2756846 + 120
+1592143054.279 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143055.280 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143055.2803562 < 1592143052.2756846 + 120
+1592143055.281 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143056.282 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143056.2818983 < 1592143052.2756846 + 120
+1592143056.282 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143057.282 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143057.2823923 < 1592143052.2756846 + 120
+1592143057.283 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143058.284 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143058.283847 < 1592143052.2756846 + 120
+1592143058.284 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143059.285 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143059.2853208 < 1592143052.2756846 + 120
+1592143059.286 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143060.287 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143060.2867706 < 1592143052.2756846 + 120
+1592143060.287 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143061.288 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143061.2882051 < 1592143052.2756846 + 120
+1592143061.288 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143062.290 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143062.2896864 < 1592143052.2756846 + 120
+1592143062.290 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143063.291 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143063.2911592 < 1592143052.2756846 + 120
+1592143063.291 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143064.293 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143064.2925959 < 1592143052.2756846 + 120
+1592143064.293 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143065.294 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143065.294004 < 1592143052.2756846 + 120
+1592143065.294 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143066.295 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143066.2954643 < 1592143052.2756846 + 120
+1592143066.296 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143067.297 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143067.296866 < 1592143052.2756846 + 120
+1592143067.297 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143068.298 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143068.2982588 < 1592143052.2756846 + 120
+1592143068.299 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143069.300 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143069.2997508 < 1592143052.2756846 + 120
+1592143069.300 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143070.301 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143070.3012242 < 1592143052.2756846 + 120
+1592143070.301 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143071.303 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143071.3026836 < 1592143052.2756846 + 120
+1592143071.303 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143072.304 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143072.3040953 < 1592143052.2756846 + 120
+1592143072.304 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143073.306 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143073.3054857 < 1592143052.2756846 + 120
+1592143073.306 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143074.307 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143074.3068895 < 1592143052.2756846 + 120
+1592143074.307 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143075.308 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143075.3082552 < 1592143052.2756846 + 120
+1592143075.308 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143076.310 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143076.309712 < 1592143052.2756846 + 120
+1592143076.310 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143077.311 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143077.3112707 < 1592143052.2756846 + 120
+1592143077.311 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143078.313 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143078.3133173 < 1592143052.2756846 + 120
+1592143078.314 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143079.315 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143079.3147178 < 1592143052.2756846 + 120
+1592143079.315 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143080.316 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143080.3161187 < 1592143052.2756846 + 120
+1592143080.316 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143081.318 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143081.317506 < 1592143052.2756846 + 120
+1592143081.318 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143082.319 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143082.3189228 < 1592143052.2756846 + 120
+1592143082.319 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143083.320 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143083.3203847 < 1592143052.2756846 + 120
+1592143083.321 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143084.322 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143084.3217604 < 1592143052.2756846 + 120
+1592143084.322 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143085.381 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143085.3811307 < 1592143052.2756846 + 120
+1592143085.381 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143086.383 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143086.3826134 < 1592143052.2756846 + 120
+1592143086.383 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143087.384 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143087.384233 < 1592143052.2756846 + 120
+1592143087.384 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143088.386 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143088.386468 < 1592143052.2756846 + 120
+1592143088.387 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143089.388 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143089.3879058 < 1592143052.2756846 + 120
+1592143089.388 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143090.389 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143090.3893843 < 1592143052.2756846 + 120
+1592143090.390 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143091.391 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143091.3908176 < 1592143052.2756846 + 120
+1592143091.391 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143092.392 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143092.3918953 < 1592143052.2756846 + 120
+1592143092.392 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143093.393 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143093.3932574 < 1592143052.2756846 + 120
+1592143093.393 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143094.395 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143094.3946686 < 1592143052.2756846 + 120
+1592143094.395 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143095.396 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143095.3961117 < 1592143052.2756846 + 120
+1592143095.396 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143096.398 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143096.3976135 < 1592143052.2756846 + 120
+1592143096.398 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143097.399 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143097.3991044 < 1592143052.2756846 + 120
+1592143097.399 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143098.400 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143098.4003346 < 1592143052.2756846 + 120
+1592143098.401 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143099.402 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143099.4017744 < 1592143052.2756846 + 120
+1592143099.402 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143100.403 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143100.4031966 < 1592143052.2756846 + 120
+1592143100.403 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143101.404 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143101.404328 < 1592143052.2756846 + 120
+1592143101.405 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143102.406 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143102.4057252 < 1592143052.2756846 + 120
+1592143102.406 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143103.407 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143103.4071305 < 1592143052.2756846 + 120
+1592143103.407 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143104.409 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143104.4085734 < 1592143052.2756846 + 120
+1592143104.409 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143105.410 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143105.4100158 < 1592143052.2756846 + 120
+1592143105.410 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143106.411 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143106.411454 < 1592143052.2756846 + 120
+1592143106.412 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143107.413 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143107.4129133 < 1592143052.2756846 + 120
+1592143107.413 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143108.414 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143108.4144564 < 1592143052.2756846 + 120
+1592143108.416 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143109.417 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143109.4168372 < 1592143052.2756846 + 120
+1592143109.417 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143110.418 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143110.4183211 < 1592143052.2756846 + 120
+1592143110.419 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143111.420 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143111.4198027 < 1592143052.2756846 + 120
+1592143111.420 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143112.421 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143112.4212549 < 1592143052.2756846 + 120
+1592143112.421 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143113.422 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143113.422088 < 1592143052.2756846 + 120
+1592143113.422 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143114.423 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143114.4234335 < 1592143052.2756846 + 120
+1592143114.424 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143115.425 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143115.4248583 < 1592143052.2756846 + 120
+1592143115.425 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143116.426 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143116.4264603 < 1592143052.2756846 + 120
+1592143116.427 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143117.428 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143117.4279058 < 1592143052.2756846 + 120
+1592143117.428 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143118.429 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143118.4292815 < 1592143052.2756846 + 120
+1592143118.429 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143119.431 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143119.4306421 < 1592143052.2756846 + 120
+1592143119.431 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143120.432 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143120.4321508 < 1592143052.2756846 + 120
+1592143120.432 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143121.434 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143121.4336865 < 1592143052.2756846 + 120
+1592143121.434 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143122.435 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143122.435204 < 1592143052.2756846 + 120
+1592143122.435 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143123.437 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143123.4366643 < 1592143052.2756846 + 120
+1592143123.437 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143124.438 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143124.438129 < 1592143052.2756846 + 120
+1592143124.438 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143125.440 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143125.439644 < 1592143052.2756846 + 120
+1592143125.440 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143126.441 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143126.4411318 < 1592143052.2756846 + 120
+1592143126.441 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143127.443 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143127.4426126 < 1592143052.2756846 + 120
+1592143127.443 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143128.444 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143128.4440408 < 1592143052.2756846 + 120
+1592143128.444 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143129.446 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143129.4455354 < 1592143052.2756846 + 120
+1592143129.446 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143130.447 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143130.4469602 < 1592143052.2756846 + 120
+1592143130.447 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143131.448 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143131.4483907 < 1592143052.2756846 + 120
+1592143131.449 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143132.450 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143132.449772 < 1592143052.2756846 + 120
+1592143132.450 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143133.451 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143133.4511728 < 1592143052.2756846 + 120
+1592143133.451 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143134.453 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143134.452536 < 1592143052.2756846 + 120
+1592143134.453 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143135.454 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143135.4539459 < 1592143052.2756846 + 120
+1592143135.454 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143136.455 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143136.4552855 < 1592143052.2756846 + 120
+1592143136.455 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143137.456 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143137.4562929 < 1592143052.2756846 + 120
+1592143137.457 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143138.458 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143138.4577334 < 1592143052.2756846 + 120
+1592143138.458 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143139.459 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143139.4591627 < 1592143052.2756846 + 120
+1592143139.459 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143140.461 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143140.4605186 < 1592143052.2756846 + 120
+1592143140.461 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143141.462 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143141.4619448 < 1592143052.2756846 + 120
+1592143141.462 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143142.463 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143142.4634242 < 1592143052.2756846 + 120
+1592143142.464 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143143.465 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143143.4648614 < 1592143052.2756846 + 120
+1592143143.465 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143144.466 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143144.4663446 < 1592143052.2756846 + 120
+1592143144.467 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143145.468 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143145.4677477 < 1592143052.2756846 + 120
+1592143145.468 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143146.469 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143146.4691355 < 1592143052.2756846 + 120
+1592143146.469 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143147.470 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143147.4700625 < 1592143052.2756846 + 120
+1592143147.470 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143148.472 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143148.4714847 < 1592143052.2756846 + 120
+1592143148.472 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143149.473 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143149.4729054 < 1592143052.2756846 + 120
+1592143149.473 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143150.474 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143150.4742968 < 1592143052.2756846 + 120
+1592143150.474 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143151.476 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143151.4756985 < 1592143052.2756846 + 120
+1592143151.476 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143152.477 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143152.4770937 < 1592143052.2756846 + 120
+1592143152.477 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143153.479 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143153.47849 < 1592143052.2756846 + 120
+1592143153.479 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143154.480 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143154.4798868 < 1592143052.2756846 + 120
+1592143154.480 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143155.481 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143155.4812791 < 1592143052.2756846 + 120
+1592143155.481 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143156.482 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143156.4822326 < 1592143052.2756846 + 120
+1592143156.482 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143157.483 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143157.4832566 < 1592143052.2756846 + 120
+1592143157.483 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143158.485 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143158.484676 < 1592143052.2756846 + 120
+1592143158.485 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143159.486 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143159.4855604 < 1592143052.2756846 + 120
+1592143159.486 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143160.487 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143160.48683 < 1592143052.2756846 + 120
+1592143160.487 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143161.488 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143161.487749 < 1592143052.2756846 + 120
+1592143161.488 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143162.488 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143162.4883277 < 1592143052.2756846 + 120
+1592143162.489 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143163.490 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143163.489774 < 1592143052.2756846 + 120
+1592143163.490 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143164.490 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143164.490248 < 1592143052.2756846 + 120
+1592143164.490 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143165.492 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143165.4916935 < 1592143052.2756846 + 120
+1592143165.492 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143166.492 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143166.4923368 < 1592143052.2756846 + 120
+1592143166.493 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143167.494 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143167.49383 < 1592143052.2756846 + 120
+1592143167.494 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143168.495 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143168.495297 < 1592143052.2756846 + 120
+1592143168.496 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143169.497 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143169.4967742 < 1592143052.2756846 + 120
+1592143169.497 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143170.498 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143170.4982345 < 1592143052.2756846 + 120
+1592143170.498 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143171.499 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: check 1592143171.4988089 < 1592143052.2756846 + 120
+1592143171.499 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: alive pilot.0000
+1592143172.500 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : killing pilots: kill! ['pilot.0000']
+1592143172.502 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : plan cancellation of {'session': 'rp.session.js-17-185.jetstream-cloud.org.aymen.018427.0011', 'pmgr': 'pmgr.0000', 'uid': 'pilot.0000', 'type': 'pilot', 'state': 'PMGR_ACTIVE_PENDING', 'log': None, 'stdout': None, 'stderr': None, 'resource': 'xsede.comet_ssh', 'resource_sandbox': 'sftp://comet.sdsc.xsede.org/oasis/scratch/comet/aymen/temp_project/radical.pilot.sandbox', 'session_sandbox': 'sftp://comet.sdsc.xsede.org/oasis/scratch/comet/aymen/temp_project/radical.pilot.sandbox/rp.session.js-17-185.jetstream-cloud.org.aymen.018427.0011', 'pilot_sandbox': 'sftp://comet.sdsc.xsede.org/oasis/scratch/comet/aymen/temp_project/radical.pilot.sandbox/rp.session.js-17-185.jetstream-cloud.org.aymen.018427.0011/pilot.0000/', 'client_sandbox': 'None', 'js_url': 'slurm+ssh://comet.sdsc.xsede.org/', 'js_hop': 'ssh://comet.sdsc.xsede.org/', 'description': {'resource': 'xsede.comet_ssh', 'access_schema': 'ssh', 'runtime': 10, 'app_comm': [], 'sandbox': None, 'cores': 24, 'gpus': 0, 'queue': 'debug', 'project': 'unc100', 'cleanup': False, 'candidate_hosts': [], 'exit_on_error': True, 'input_staging': [], 'output_staging': [], 'layout': 'default'}, '_id': 'pilot.0000', 'control': 'pmgr', 'states': ['NEW'], 'cmd': [], 'cfg': {'bridges': {'agent_executing_queue': {'bulk_size': 0, 'kind': 'queue', 'log_level': 'error', 'stall_hwm': 0}, 'agent_schedule_pubsub': {'kind': 'pubsub', 'log_level': 'error'}, 'agent_scheduling_queue': {'bulk_size': 0, 'kind': 'queue', 'log_level': 'error', 'stall_hwm': 0}, 'agent_staging_input_queue': {'bulk_size': 0, 'kind': 'queue', 'log_level': 'error', 'stall_hwm': 0}, 'agent_staging_output_queue': {'bulk_size': 0, 'kind': 'queue', 'log_level': 'error', 'stall_hwm': 0}, 'agent_unschedule_pubsub': {'kind': 'pubsub', 'log_level': 'error'}, 'control_pubsub': {'kind': 'pubsub', 'log_level': 'error'}, 'funcs_req_queue': {'bulk_size': 1, 'kind': 'queue', 'log_level': 'error', 'stall_hwm': 0}, 'funcs_res_queue': {'bulk_size': 1, 'kind': 'queue', 'log_level': 'error', 'stall_hwm': 0}, 'state_pubsub': {'kind': 'pubsub', 'log_level': 'error'}}, 'bulk_collection_size': 1024, 'bulk_collection_time': 1.0, 'bulk_size': 1024, 'bulk_time': 1.0, 'components': {'agent_executing': {'count': 1}, 'agent_scheduling': {'count': 1}, 'agent_staging_input': {'count': 1}, 'agent_staging_output': {'count': 1}, 'update': {'count': 1}}, 'db_poll_sleeptime': 2.0, 'heartbeat': {'interval': 1.0, 'timeout': 60.0}, 'mode': 'shared', 'target': 'local', 'owner': 'agent.0', 'cores': 24, 'gpus': 0, 'spawner': 'POPEN', 'scheduler': 'CONTINUOUS', 'runtime': 10, 'app_comm': [], 'dburl': 'mongodb://aymen:7SrUNXq3X64nNFRk@129.114.17.185:27017/radical3', 'sid': 'rp.session.js-17-185.jetstream-cloud.org.aymen.018427.0011', 'pid': 'pilot.0000', 'pmgr': 'pmgr.0000', 'logdir': '.', 'pilot_sandbox': '/oasis/scratch/comet/aymen/temp_project/radical.pilot.sandbox/rp.session.js-17-185.jetstream-cloud.org.aymen.018427.0011/pilot.0000/', 'session_sandbox': '/oasis/scratch/comet/aymen/temp_project/radical.pilot.sandbox/rp.session.js-17-185.jetstream-cloud.org.aymen.018427.0011', 'resource_sandbox': '/oasis/scratch/comet/aymen/temp_project/radical.pilot.sandbox', 'resource_manager': 'SLURM', 'agent_launch_method': 'SSH', 'task_launch_method': 'SSH', 'mpi_launch_method': 'IBRUN', 'cores_per_node': 24, 'gpus_per_node': 0, 'lfs_path_per_node': '/scratch/$USER/$SLURM_JOB_ID', 'lfs_size_per_node': 176105, 'cu_tmp': '/scratch/$USER/$SLURM_JOBID', 'export_to_cu': None, 'cu_pre_exec': None, 'cu_post_exec': None, 'resource_cfg': {'agent_launch_method': 'SSH', 'agent_scheduler': 'CONTINUOUS', 'agent_spawner': 'POPEN', 'cores_per_node': 24, 'cu_tmp': '/scratch/$USER/$SLURM_JOBID', 'default_queue': 'compute', 'default_remote_workdir': '/oasis/scratch/comet/$USER/temp_project', 'description': "The Comet HPC resource at SDSC 'HPC for the 99%' (http://www.sdsc.edu/services/hpc/hpc_systems.html#comet).", 'gsissh': {'filesystem_endpoint': 'gsisftp://comet.sdsc.xsede.org/', 'job_manager_endpoint': 'slurm+gsissh://comet.sdsc.xsede.org/'}, 'lfs_path_per_node': '/scratch/$USER/$SLURM_JOB_ID', 'lfs_size_per_node': 176105, 'mandatory_args': ['project'], 'mpi_launch_method': 'IBRUN', 'notes': 'Always set the ``project`` attribute in the ComputePilotDescription or the pilot will fail.', 'pre_bootstrap_0': ['module load python'], 'python_dist': 'default', 'resource_manager': 'SLURM', 'rp_version': 'local', 'schemas': ['ssh', 'gsissh'], 'ssh': {'filesystem_endpoint': 'sftp://comet.sdsc.xsede.org/', 'job_manager_endpoint': 'slurm+ssh://comet.sdsc.xsede.org/'}, 'task_launch_method': 'SSH', 'valid_roots': ['/oasis/scratch/comet'], 'virtenv_mode': 'create', 'filesystem_endpoint': 'sftp://comet.sdsc.xsede.org/', 'job_manager_endpoint': 'slurm+ssh://comet.sdsc.xsede.org/'}, 'debug': 10}, 'cancel_requested': 1592143052.2756846} : [slurm+ssh://comet.sdsc.xsede.org/]-[34132370]
+1592143172.504 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : request cancel for pilot.0000
+1592143172.504 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : cancellation start
+1592143172.993 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : cancellation done
+1592143172.993 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : advance bulk: 1 [False, True]
+1592143172.995 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : close js ssh://comet.sdsc.xsede.org/
+1592143173.199 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : close js slurm+ssh://comet.sdsc.xsede.org/
+1592143173.200 : pmgr_launching.0000  : 6302  : 139631425201920 : DEBUG    : pmgr_launching.0000 close prof
+1592143173.208 : pmgr_launching.0000  : 6302  : 139631425201920 : WARNING  : hb fail cmgr.0001: fatal (6302)

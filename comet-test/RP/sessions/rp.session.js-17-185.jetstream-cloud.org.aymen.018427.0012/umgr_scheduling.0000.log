@@ -1,0 +1,173 @@
+1592143169.754 : umgr_scheduling.0000 : 8390  : 139961476183808 : INFO     : connect pub to state_pubsub: tcp://172.25.139.3:46689
+1592143169.755 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : registered publisher for state_pubsub
+1592143170.760 : umgr_scheduling.0000 : 8390  : 139961476183808 : INFO     : connect pub to control_pubsub: tcp://172.25.139.3:36229
+1592143170.761 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : registered publisher for control_pubsub
+1592143171.766 : umgr_scheduling.0000 : 8390  : 139961476183808 : INFO     : connect sub to control_pubsub: tcp://172.25.139.3:40209
+1592143171.767 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : ~~ control_pubsub: control_pubsub
+1592143171.767 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : RoundRobin umgr scheduler configured
+1592143172.772 : umgr_scheduling.0000 : 8390  : 139961476183808 : INFO     : connect get to umgr_scheduling_queue: tcp://172.25.139.3:34100
+1592143172.785 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : registered input umgr_scheduling.0000.work.UMGR_SCHEDULING_PENDING
+1592143172.785 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : umgr_scheduling.0000 register input UMGR_SCHEDULING_PENDING: umgr_scheduling.0000.work.UMGR_SCHEDULING_PENDING
+1592143172.785 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : registered worker work [UMGR_SCHEDULING_PENDING]
+1592143172.785 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : umgr_scheduling.0000 register output UMGR_STAGING_INPUT_PENDING:umgr_staging_input_queue
+1592143174.795 : umgr_scheduling.0000 : 8390  : 139961476183808 : INFO     : connect sub to state_pubsub: tcp://172.25.139.3:35485
+1592143174.797 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : ~~ state_pubsub: state_pubsub
+1592143174.797 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : ~~ control_pubsub: control_pubsub
+1592143175.872 : umgr_scheduling.0000 : 8390  : 139961599747840 : DEBUG    : start heartbeat
+1592143176.878 : umgr_scheduling.0000 : 8390  : 139961599747840 : INFO     : connect sub to heartbeat: tcp://172.25.139.3:38193
+1592143176.881 : umgr_scheduling.0000 : 8390  : 139961599747840 : DEBUG    : ~~ heartbeat: heartbeat
+1592143180.645 : umgr_scheduling.0000 : 8390  : 139961013618432 : INFO     : scheduler state_cb: update
+1592143180.645 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : update pilots ['pilot.0000']
+1592143180.645 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : update units  []
+1592143180.645 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : update pilot states for ['pilot.0000']
+1592143180.646 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : update pilot state: None -> ['NEW', 'PMGR_LAUNCHING_PENDING']
+1592143180.646 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : updated  : ['pilot.0000']
+1592143180.649 : umgr_scheduling.0000 : 8390  : 139961349162752 : DEBUG    : command incoming: {'cmd': 'add_pilots', 'arg': {'pilots': [{'session': 'rp.session.js-17-185.jetstream-cloud.org.aymen.018427.0012', 'pmgr': 'pmgr.0000', 'uid': 'pilot.0000', 'type': 'pilot', 'state': 'PMGR_LAUNCHING_PENDING', 'log': None, 'stdout': None, 'stderr': None, 'resource': 'xsede.comet_ssh', 'resource_sandbox': 'sftp://comet.sdsc.xsede.org/oasis/scratch/comet/aymen/temp_project/radical.pilot.sandbox', 'session_sandbox': 'sftp://comet.sdsc.xsede.org/oasis/scratch/comet/aymen/temp_project/radical.pilot.sandbox/rp.session.js-17-185.jetstream-cloud.org.aymen.018427.0012', 'pilot_sandbox': 'sftp://comet.sdsc.xsede.org/oasis/scratch/comet/aymen/temp_project/radical.pilot.sandbox/rp.session.js-17-185.jetstream-cloud.org.aymen.018427.0012/pilot.0000/', 'client_sandbox': '/home/aymen/RADICAL/radical.pilot/examples', 'js_url': 'slurm+ssh://comet.sdsc.xsede.org/', 'js_hop': 'ssh://comet.sdsc.xsede.org/', 'description': {'resource': 'xsede.comet_ssh', 'access_schema': 'ssh', 'runtime': 10, 'app_comm': [], 'sandbox': None, 'cores': 24, 'gpus': 0, 'queue': 'debug', 'project': 'unc100', 'cleanup': False, 'candidate_hosts': [], 'exit_on_error': True, 'input_staging': [], 'output_staging': [], 'layout': 'default'}, 'resource_details': None}], 'umgr': 'umgr.0000'}}
+1592143180.649 : umgr_scheduling.0000 : 8390  : 139961349162752 : DEBUG    : command ignored: add_pilots
+1592143180.651 : umgr_scheduling.0000 : 8390  : 139961349162752 : DEBUG    : got cmd add_pilots
+1592143180.651 : umgr_scheduling.0000 : 8390  : 139961349162752 : INFO     : scheduler command: add_pilots: {'pilots': [{'session': 'rp.session.js-17-185.jetstream-cloud.org.aymen.018427.0012', 'pmgr': 'pmgr.0000', 'uid': 'pilot.0000', 'type': 'pilot', 'state': 'PMGR_LAUNCHING_PENDING', 'log': None, 'stdout': None, 'stderr': None, 'resource': 'xsede.comet_ssh', 'resource_sandbox': 'sftp://comet.sdsc.xsede.org/oasis/scratch/comet/aymen/temp_project/radical.pilot.sandbox', 'session_sandbox': 'sftp://comet.sdsc.xsede.org/oasis/scratch/comet/aymen/temp_project/radical.pilot.sandbox/rp.session.js-17-185.jetstream-cloud.org.aymen.018427.0012', 'pilot_sandbox': 'sftp://comet.sdsc.xsede.org/oasis/scratch/comet/aymen/temp_project/radical.pilot.sandbox/rp.session.js-17-185.jetstream-cloud.org.aymen.018427.0012/pilot.0000/', 'client_sandbox': '/home/aymen/RADICAL/radical.pilot/examples', 'js_url': 'slurm+ssh://comet.sdsc.xsede.org/', 'js_hop': 'ssh://comet.sdsc.xsede.org/', 'description': {'resource': 'xsede.comet_ssh', 'access_schema': 'ssh', 'runtime': 10, 'app_comm': [], 'sandbox': None, 'cores': 24, 'gpus': 0, 'queue': 'debug', 'project': 'unc100', 'cleanup': False, 'candidate_hosts': [], 'exit_on_error': True, 'input_staging': [], 'output_staging': [], 'layout': 'default'}, 'resource_details': None}], 'umgr': 'umgr.0000'}
+1592143180.651 : umgr_scheduling.0000 : 8390  : 139961349162752 : DEBUG    : added pilot: {'role': 'added', 'state': 'PMGR_LAUNCHING_PENDING', 'pilot': {'session': 'rp.session.js-17-185.jetstream-cloud.org.aymen.018427.0012', 'pmgr': 'pmgr.0000', 'uid': 'pilot.0000', 'type': 'pilot', 'state': 'PMGR_LAUNCHING_PENDING', 'log': None, 'stdout': None, 'stderr': None, 'resource': 'xsede.comet_ssh', 'resource_sandbox': 'sftp://comet.sdsc.xsede.org/oasis/scratch/comet/aymen/temp_project/radical.pilot.sandbox', 'session_sandbox': 'sftp://comet.sdsc.xsede.org/oasis/scratch/comet/aymen/temp_project/radical.pilot.sandbox/rp.session.js-17-185.jetstream-cloud.org.aymen.018427.0012', 'pilot_sandbox': 'sftp://comet.sdsc.xsede.org/oasis/scratch/comet/aymen/temp_project/radical.pilot.sandbox/rp.session.js-17-185.jetstream-cloud.org.aymen.018427.0012/pilot.0000/', 'client_sandbox': '/home/aymen/RADICAL/radical.pilot/examples', 'js_url': 'slurm+ssh://comet.sdsc.xsede.org/', 'js_hop': 'ssh://comet.sdsc.xsede.org/', 'description': {'resource': 'xsede.comet_ssh', 'access_schema': 'ssh', 'runtime': 10, 'app_comm': [], 'sandbox': None, 'cores': 24, 'gpus': 0, 'queue': 'debug', 'project': 'unc100', 'cleanup': False, 'candidate_hosts': [], 'exit_on_error': True, 'input_staging': [], 'output_staging': [], 'layout': 'default'}, 'resource_details': None}, 'info': {}}
+1592143180.651 : umgr_scheduling.0000 : 8390  : 139961349162752 : DEBUG    : update pilot states for ['pilot.0000']
+1592143180.651 : umgr_scheduling.0000 : 8390  : 139961349162752 : DEBUG    : updated  : []
+1592143180.652 : umgr_scheduling.0000 : 8390  : 139961349162752 : DEBUG    : add pilot - waitpool 0
+1592143180.673 : umgr_scheduling.0000 : 8390  : 139961013618432 : INFO     : scheduler state_cb: update
+1592143180.674 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : update pilots []
+1592143180.674 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : update units  ['unit.000000', 'unit.000001', 'unit.000002', 'unit.000003', 'unit.000004', 'unit.000005', 'unit.000006', 'unit.000007', 'unit.000008', 'unit.000009', 'unit.000010', 'unit.000011', 'unit.000012', 'unit.000013', 'unit.000014', 'unit.000015', 'unit.000016', 'unit.000017', 'unit.000018', 'unit.000019', 'unit.000020', 'unit.000021', 'unit.000022', 'unit.000023']
+1592143180.674 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : update pilot states for []
+1592143180.702 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : got unit (unit.000000)
+1592143180.702 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : got unit (unit.000001)
+1592143180.702 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : got unit (unit.000002)
+1592143180.702 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : got unit (unit.000003)
+1592143180.702 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : got unit (unit.000004)
+1592143180.703 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : got unit (unit.000005)
+1592143180.703 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : got unit (unit.000006)
+1592143180.703 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : got unit (unit.000007)
+1592143180.703 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : got unit (unit.000008)
+1592143180.703 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : got unit (unit.000009)
+1592143180.703 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : got unit (unit.000010)
+1592143180.703 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : got unit (unit.000011)
+1592143180.703 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : got unit (unit.000012)
+1592143180.703 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : got unit (unit.000013)
+1592143180.703 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : got unit (unit.000014)
+1592143180.703 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : got unit (unit.000015)
+1592143180.703 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : got unit (unit.000016)
+1592143180.703 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : got unit (unit.000017)
+1592143180.704 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : got unit (unit.000018)
+1592143180.704 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : got unit (unit.000019)
+1592143180.704 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : got unit (unit.000020)
+1592143180.704 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : got unit (unit.000021)
+1592143180.704 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : got unit (unit.000022)
+1592143180.704 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : got unit (unit.000023)
+1592143180.704 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : advance bulk: 24 [False, True]
+1592143180.705 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : to_schedule: 24
+1592143180.705 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : attempt unit.000000
+1592143180.705 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : attempt unit.000001
+1592143180.705 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : attempt unit.000002
+1592143180.706 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : attempt unit.000003
+1592143180.706 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : attempt unit.000004
+1592143180.706 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : attempt unit.000005
+1592143180.706 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : attempt unit.000006
+1592143180.706 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : attempt unit.000007
+1592143180.706 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : attempt unit.000008
+1592143180.706 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : attempt unit.000009
+1592143180.706 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : attempt unit.000010
+1592143180.706 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : attempt unit.000011
+1592143180.706 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : attempt unit.000012
+1592143180.706 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : attempt unit.000013
+1592143180.706 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : attempt unit.000014
+1592143180.707 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : attempt unit.000015
+1592143180.707 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : attempt unit.000016
+1592143180.707 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : attempt unit.000017
+1592143180.708 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : attempt unit.000018
+1592143180.708 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : attempt unit.000019
+1592143180.708 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : attempt unit.000020
+1592143180.708 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : attempt unit.000021
+1592143180.708 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : attempt unit.000022
+1592143180.708 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : attempt unit.000023
+1592143180.708 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : failed 0 / scheduled 0 / unscheduled 24
+1592143180.708 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : schedule 24 units
+1592143180.708 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : assign unit.000000 to pilot.0000
+1592143181.946 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : assign unit.000001 to pilot.0000
+1592143181.946 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : assign unit.000002 to pilot.0000
+1592143181.946 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : assign unit.000003 to pilot.0000
+1592143181.947 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : assign unit.000004 to pilot.0000
+1592143181.947 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : assign unit.000005 to pilot.0000
+1592143181.947 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : assign unit.000006 to pilot.0000
+1592143181.948 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : assign unit.000007 to pilot.0000
+1592143181.948 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : assign unit.000008 to pilot.0000
+1592143181.948 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : assign unit.000009 to pilot.0000
+1592143181.949 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : assign unit.000010 to pilot.0000
+1592143181.949 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : assign unit.000011 to pilot.0000
+1592143181.949 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : assign unit.000012 to pilot.0000
+1592143181.950 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : assign unit.000013 to pilot.0000
+1592143181.950 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : assign unit.000014 to pilot.0000
+1592143181.950 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : assign unit.000015 to pilot.0000
+1592143181.951 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : assign unit.000016 to pilot.0000
+1592143181.951 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : assign unit.000017 to pilot.0000
+1592143181.951 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : assign unit.000018 to pilot.0000
+1592143181.951 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : assign unit.000019 to pilot.0000
+1592143181.952 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : assign unit.000020 to pilot.0000
+1592143181.952 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : assign unit.000021 to pilot.0000
+1592143181.952 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : assign unit.000022 to pilot.0000
+1592143181.953 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : assign unit.000023 to pilot.0000
+1592143181.953 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : failed: 0, ok: 24
+1592143181.953 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : advance bulk: 24 [True, True]
+1592143181.954 : umgr_scheduling.0000 : 8390  : 139961476183808 : DEBUG    : put bulk UMGR_STAGING_INPUT_PENDING: 24
+1592143181.956 : umgr_scheduling.0000 : 8390  : 139961013618432 : INFO     : scheduler state_cb: update
+1592143181.956 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : update pilots []
+1592143181.956 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : update units  ['unit.000000', 'unit.000001', 'unit.000002', 'unit.000003', 'unit.000004', 'unit.000005', 'unit.000006', 'unit.000007', 'unit.000008', 'unit.000009', 'unit.000010', 'unit.000011', 'unit.000012', 'unit.000013', 'unit.000014', 'unit.000015', 'unit.000016', 'unit.000017', 'unit.000018', 'unit.000019', 'unit.000020', 'unit.000021', 'unit.000022', 'unit.000023']
+1592143181.957 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : update pilot states for []
+1592143181.957 : umgr_scheduling.0000 : 8390  : 139961013618432 : INFO     : scheduler state_cb: update
+1592143181.957 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : update pilots ['pilot.0000']
+1592143181.957 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : update units  []
+1592143181.957 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : update pilot states for ['pilot.0000']
+1592143181.957 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : update pilot state: PMGR_LAUNCHING_PENDING -> ['PMGR_LAUNCHING']
+1592143181.957 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : updated  : ['pilot.0000']
+1592143181.958 : umgr_scheduling.0000 : 8390  : 139961013618432 : INFO     : scheduler state_cb: update
+1592143181.958 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : update pilots []
+1592143181.958 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : update units  ['unit.000000', 'unit.000001', 'unit.000002', 'unit.000003', 'unit.000004', 'unit.000005', 'unit.000006', 'unit.000007', 'unit.000008', 'unit.000009', 'unit.000010', 'unit.000011', 'unit.000012', 'unit.000013', 'unit.000014', 'unit.000015', 'unit.000016', 'unit.000017', 'unit.000018', 'unit.000019', 'unit.000020', 'unit.000021', 'unit.000022', 'unit.000023']
+1592143181.958 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : update pilot states for []
+1592143181.972 : umgr_scheduling.0000 : 8390  : 139961013618432 : INFO     : scheduler state_cb: update
+1592143181.972 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : update pilots []
+1592143181.972 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : update units  ['unit.000000', 'unit.000001', 'unit.000002', 'unit.000003', 'unit.000004', 'unit.000005', 'unit.000006', 'unit.000007', 'unit.000008', 'unit.000009', 'unit.000010', 'unit.000011', 'unit.000012', 'unit.000013', 'unit.000014', 'unit.000015', 'unit.000016', 'unit.000017', 'unit.000018', 'unit.000019', 'unit.000020', 'unit.000021', 'unit.000022', 'unit.000023']
+1592143181.973 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : update pilot states for []
+1592143193.441 : umgr_scheduling.0000 : 8390  : 139961013618432 : INFO     : scheduler state_cb: update
+1592143193.441 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : update pilots []
+1592143193.441 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : update units  ['unit.000000', 'unit.000001', 'unit.000002', 'unit.000003', 'unit.000004', 'unit.000005', 'unit.000006', 'unit.000007', 'unit.000008', 'unit.000009', 'unit.000010', 'unit.000011', 'unit.000012', 'unit.000013', 'unit.000014', 'unit.000015', 'unit.000016', 'unit.000017', 'unit.000018', 'unit.000019', 'unit.000020', 'unit.000021', 'unit.000022', 'unit.000023']
+1592143193.441 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : update pilot states for []
+1592143198.309 : umgr_scheduling.0000 : 8390  : 139961013618432 : INFO     : scheduler state_cb: update
+1592143198.309 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : update pilots ['pilot.0000']
+1592143198.309 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : update units  []
+1592143198.309 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : update pilot states for ['pilot.0000']
+1592143198.309 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : update pilot state: PMGR_LAUNCHING -> ['PMGR_ACTIVE_PENDING']
+1592143198.309 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : updated  : ['pilot.0000']
+1592143261.694 : umgr_scheduling.0000 : 8390  : 139961013618432 : INFO     : scheduler state_cb: update
+1592143261.694 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : update pilots ['pilot.0000']
+1592143261.694 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : update units  []
+1592143261.694 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : update pilot states for ['pilot.0000']
+1592143261.694 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : update pilot state: PMGR_ACTIVE_PENDING -> ['PMGR_ACTIVE']
+1592143261.694 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : updated  : ['pilot.0000']
+1592143560.869 : umgr_scheduling.0000 : 8390  : 139961013618432 : INFO     : scheduler state_cb: update
+1592143560.869 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : update pilots []
+1592143560.869 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : update units  ['unit.000000', 'unit.000001', 'unit.000002', 'unit.000003', 'unit.000004', 'unit.000005', 'unit.000006', 'unit.000007', 'unit.000008', 'unit.000009', 'unit.000010', 'unit.000011']
+1592143560.869 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : update pilot states for []
+1592143560.878 : umgr_scheduling.0000 : 8390  : 139961013618432 : INFO     : scheduler state_cb: update
+1592143560.878 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : update pilots []
+1592143560.878 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : update units  ['unit.000000', 'unit.000001', 'unit.000002', 'unit.000003', 'unit.000004', 'unit.000005', 'unit.000006', 'unit.000007', 'unit.000008', 'unit.000009', 'unit.000010', 'unit.000011']
+1592143560.878 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : update pilot states for []
+1592143562.885 : umgr_scheduling.0000 : 8390  : 139961013618432 : INFO     : scheduler state_cb: update
+1592143562.885 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : update pilots []
+1592143562.886 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : update units  ['unit.000012', 'unit.000013', 'unit.000014', 'unit.000015', 'unit.000016', 'unit.000017', 'unit.000018', 'unit.000019', 'unit.000020', 'unit.000021', 'unit.000022', 'unit.000023']
+1592143562.886 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : update pilot states for []
+1592143562.893 : umgr_scheduling.0000 : 8390  : 139961013618432 : INFO     : scheduler state_cb: update
+1592143562.893 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : update pilots []
+1592143562.893 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : update units  ['unit.000012', 'unit.000013', 'unit.000014', 'unit.000015', 'unit.000016', 'unit.000017', 'unit.000018', 'unit.000019', 'unit.000020', 'unit.000021', 'unit.000022', 'unit.000023']
+1592143562.894 : umgr_scheduling.0000 : 8390  : 139961013618432 : DEBUG    : update pilot states for []
+1592143563.172 : umgr_scheduling.0000 : 8390  : 139961349162752 : DEBUG    : command incoming: {'cmd': 'cancel_pilots', 'arg': {'pmgr': 'pmgr.0000', 'uids': ['pilot.0000']}}
+1592143563.172 : umgr_scheduling.0000 : 8390  : 139961349162752 : DEBUG    : command ignored: cancel_pilots
+1592143563.173 : umgr_scheduling.0000 : 8390  : 139961349162752 : DEBUG    : got cmd cancel_pilots
+1592143622.954 : umgr_scheduling.0000 : 8390  : 139960988440320 : WARNING  : hb umgr_scheduling.0000[cmgr.0002]: 1592143623.0 - 1592143562.2 > 60: timeout
+1592143623.048 : umgr_scheduling.0000 : 8390  : 139960988440320 : INFO     : stop umgr_scheduling.0000 (8390 : Thread-4) [__main__.hb_term_cb]
+1592143623.048 : umgr_scheduling.0000 : 8390  : 139960988440320 : DEBUG    : _finalize()
+1592143623.048 : umgr_scheduling.0000 : 8390  : 139960988440320 : DEBUG    : umgr_scheduling.0000 close prof
+1592143623.055 : umgr_scheduling.0000 : 8390  : 139960988440320 : WARNING  : hb fail cmgr.0002: fatal (8390)
