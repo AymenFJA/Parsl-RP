@@ -1,0 +1,707 @@
+1590609761.985 : agent_scheduling.0000 : 25356 : 140083541092096 : INFO     : connect pub to log_pubsub: tcp://172.27.61.10:43172
+1590609761.987 : agent_scheduling.0000 : 25356 : 140083541092096 : DEBUG    : registered publisher for log_pubsub
+1590609761.987 : agent_scheduling.0000 : 25356 : 140083541092096 : INFO     : connect pub to state_pubsub: tcp://172.27.61.10:41651
+1590609761.988 : agent_scheduling.0000 : 25356 : 140083541092096 : DEBUG    : registered publisher for state_pubsub
+1590609761.989 : agent_scheduling.0000 : 25356 : 140083541092096 : INFO     : connect pub to control_pubsub: tcp://172.27.61.10:43156
+1590609761.989 : agent_scheduling.0000 : 25356 : 140083541092096 : DEBUG    : registered publisher for control_pubsub
+1590609761.990 : agent_scheduling.0000 : 25356 : 140083541092096 : INFO     : connect sub to control_pubsub: tcp://172.27.61.10:42070
+1590609761.993 : agent_scheduling.0000 : 25356 : 140083541092096 : DEBUG    : ~~ control_pubsub: ?
+1590609761.993 : agent_scheduling.0000 : 25356 : 140083541092096 : DEBUG    : ~~ control_pubsub: control_pubsub
+1590609762.014 : agent_scheduling.0000 : 25356 : 140083541092096 : DEBUG    : status: slot status after  init       : |--------:-|
+1590609762.014 : agent_scheduling.0000 : 25356 : 140083541092096 : INFO     : connect get to agent_scheduling_queue: tcp://172.27.61.10:42883
+1590609762.015 : agent_scheduling.0000 : 25356 : 140083541092096 : DEBUG    : registered input agent_scheduling.0000.work.AGENT_SCHEDULING_PENDING
+1590609762.015 : agent_scheduling.0000 : 25356 : 140083541092096 : DEBUG    : agent_scheduling.0000 register input AGENT_SCHEDULING_PENDING: agent_scheduling.0000.work.AGENT_SCHEDULING_PENDING
+1590609762.015 : agent_scheduling.0000 : 25356 : 140083541092096 : DEBUG    : registered worker work [AGENT_SCHEDULING_PENDING]
+1590609762.015 : agent_scheduling.0000 : 25356 : 140083541092096 : INFO     : connect sub to agent_unschedule_pubsub: tcp://172.27.61.10:43681
+1590609762.016 : agent_scheduling.0000 : 25356 : 140083541092096 : DEBUG    : ~~ agent_unschedule_pubsub: ?
+1590609762.016 : agent_scheduling.0000 : 25356 : 140083541092096 : DEBUG    : ~~ agent_unschedule_pubsub: agent_unschedule_pubsub
+1590609762.021 : agent_scheduling.0000 : 25356 : 140083541092096 : DEBUG    : -> agent_scheduling_queue (3) [True ]: ?
+1590609762.022 : agent_scheduling.0000 : 25356 : 140083541092096 : DEBUG    : -> agent_scheduling_queue (3) [True ]: request 25356
+1590609762.023 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : agent_scheduling.0000 register output AGENT_EXECUTING_PENDING:agent_executing_queue
+1590609762.027 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609762.028 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609762.088 : agent_scheduling.0000 : 25356 : 140083713144576 : DEBUG    : start heartbeat
+1590609762.089 : agent_scheduling.0000 : 25356 : 140083713144576 : INFO     : connect sub to heartbeat: tcp://172.27.61.10:42993
+1590609762.091 : agent_scheduling.0000 : 25356 : 140083713144576 : DEBUG    : ~~ heartbeat: ?
+1590609762.091 : agent_scheduling.0000 : 25356 : 140083713144576 : DEBUG    : ~~ heartbeat: heartbeat
+1590609762.131 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609762.131 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609762.234 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609762.234 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609762.337 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609762.337 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609762.439 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609762.440 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609762.542 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609762.543 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609762.645 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609762.646 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609762.748 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609762.748 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609762.851 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609762.851 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609762.954 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609762.954 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609763.057 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609763.057 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609763.160 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609763.160 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609763.263 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609763.263 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609763.366 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609763.366 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609763.469 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609763.469 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609763.571 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609763.572 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609763.674 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609763.674 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609763.777 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609763.777 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609763.880 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609763.880 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609763.983 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609763.983 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609764.086 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609764.086 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609764.189 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609764.189 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609764.292 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609764.292 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609764.395 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609764.395 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609764.498 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609764.498 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609764.065 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609764.065 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609764.168 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609764.168 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609764.271 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609764.271 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609764.373 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609764.374 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609764.476 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609764.476 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609764.579 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609764.579 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609764.682 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609764.682 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609764.785 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609764.785 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609764.888 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609764.888 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609764.991 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609764.991 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609765.094 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609765.094 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609765.174 : agent_scheduling.0000 : 25356 : 140083541092096 : DEBUG    : <- agent_scheduling_queue (3) [False]: unit.000000 [AGENT_SCHEDULING_PENDING]
+1590609765.174 : agent_scheduling.0000 : 25356 : 140083541092096 : DEBUG    : <- agent_scheduling_queue (3) [False]: unit.000001 [AGENT_SCHEDULING_PENDING]
+1590609765.174 : agent_scheduling.0000 : 25356 : 140083541092096 : DEBUG    : <- agent_scheduling_queue (3) [False]: unit.000002 [AGENT_SCHEDULING_PENDING]
+1590609765.175 : agent_scheduling.0000 : 25356 : 140083541092096 : DEBUG    : got unit (unit.000000)
+1590609765.175 : agent_scheduling.0000 : 25356 : 140083541092096 : DEBUG    : got unit (unit.000001)
+1590609765.175 : agent_scheduling.0000 : 25356 : 140083541092096 : DEBUG    : got unit (unit.000002)
+1590609765.175 : agent_scheduling.0000 : 25356 : 140083541092096 : DEBUG    : advance bulk: 3 [False, True]
+1590609765.177 : agent_scheduling.0000 : 25356 : 140083541092096 : DEBUG    : -> agent_scheduling_queue (3) [True ]: ?
+1590609765.177 : agent_scheduling.0000 : 25356 : 140083541092096 : DEBUG    : -> agent_scheduling_queue (3) [True ]: request 25356
+1590609765.197 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609765.197 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609765.199 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule incoming [3]  : |--------:-|
+1590609765.199 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : -------------------------
+1590609765.199 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : find_resources unit.000000 (mpi)
+1590609765.199 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : req : 1 1 0 0 0
+1590609765.199 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : next localhost_0 : localhost
+1590609765.199 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : req1: 1 = 1 + 0
+1590609765.199 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : find: 1
+1590609765.200 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : new slots: [{'core_map': [[0]],
+  'gpu_map': [],
+  'lfs': {'path': '/tmp', 'size': 0},
+  'mem': 0,
+  'name': 'localhost',
+  'uid': 'localhost_0'}]
+1590609765.200 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : req2: 1 = 0 + 1 <> 1
+1590609765.201 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : success -------------------------
+{'cores_per_node': 8,
+ 'gpus_per_node': 1,
+ 'lfs_per_node': {'path': '/tmp', 'size': 1024},
+ 'lm_info': {'version_info': {'FORK': {'version': '0.42',
+                                       'version_detail': 'There is no spoon'}}},
+ 'mem_per_node': 0,
+ 'nodes': [{'core_map': [[0]],
+            'gpu_map': [],
+            'lfs': {'path': '/tmp', 'size': 0},
+            'mem': 0,
+            'name': 'localhost',
+            'uid': 'localhost_0'}]}
+1590609765.201 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : advance bulk: 1 [True, True]
+1590609765.202 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : put bulk AGENT_EXECUTING_PENDING: 1
+1590609765.202 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : -------------------------
+1590609765.202 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : find_resources unit.000001 (mpi)
+1590609765.203 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : req : 1 1 0 0 0
+1590609765.203 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : next localhost_0 : localhost
+1590609765.203 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : req1: 1 = 1 + 0
+1590609765.203 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : find: 1
+1590609765.203 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : new slots: [{'core_map': [[1]],
+  'gpu_map': [],
+  'lfs': {'path': '/tmp', 'size': 0},
+  'mem': 0,
+  'name': 'localhost',
+  'uid': 'localhost_0'}]
+1590609765.203 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : req2: 1 = 0 + 1 <> 1
+1590609765.204 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : success -------------------------
+{'cores_per_node': 8,
+ 'gpus_per_node': 1,
+ 'lfs_per_node': {'path': '/tmp', 'size': 1024},
+ 'lm_info': {'version_info': {'FORK': {'version': '0.42',
+                                       'version_detail': 'There is no spoon'}}},
+ 'mem_per_node': 0,
+ 'nodes': [{'core_map': [[1]],
+            'gpu_map': [],
+            'lfs': {'path': '/tmp', 'size': 0},
+            'mem': 0,
+            'name': 'localhost',
+            'uid': 'localhost_0'}]}
+1590609765.204 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : advance bulk: 1 [True, True]
+1590609765.205 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : put bulk AGENT_EXECUTING_PENDING: 1
+1590609765.205 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : -------------------------
+1590609765.205 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : find_resources unit.000002 (mpi)
+1590609765.205 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : req : 1 1 0 0 0
+1590609765.205 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : next localhost_0 : localhost
+1590609765.205 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : req1: 1 = 1 + 0
+1590609765.205 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : find: 1
+1590609765.206 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : new slots: [{'core_map': [[2]],
+  'gpu_map': [],
+  'lfs': {'path': '/tmp', 'size': 0},
+  'mem': 0,
+  'name': 'localhost',
+  'uid': 'localhost_0'}]
+1590609765.206 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : req2: 1 = 0 + 1 <> 1
+1590609765.207 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : success -------------------------
+{'cores_per_node': 8,
+ 'gpus_per_node': 1,
+ 'lfs_per_node': {'path': '/tmp', 'size': 1024},
+ 'lm_info': {'version_info': {'FORK': {'version': '0.42',
+                                       'version_detail': 'There is no spoon'}}},
+ 'mem_per_node': 0,
+ 'nodes': [{'core_map': [[2]],
+            'gpu_map': [],
+            'lfs': {'path': '/tmp', 'size': 0},
+            'mem': 0,
+            'name': 'localhost',
+            'uid': 'localhost_0'}]}
+1590609765.207 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : advance bulk: 1 [True, True]
+1590609765.207 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : put bulk AGENT_EXECUTING_PENDING: 1
+1590609765.207 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule incoming      : |###-----:-|
+1590609765.209 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609765.209 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609765.312 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609765.312 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609765.415 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609765.415 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609765.518 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609765.518 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609765.621 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609765.621 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609765.724 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609765.724 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609765.827 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609765.827 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609765.930 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609765.930 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609766.033 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609766.033 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609766.136 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609766.136 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609766.239 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609766.239 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609766.342 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609766.345 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609766.448 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609766.448 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609766.551 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609766.551 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609766.654 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609766.654 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609766.757 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609766.757 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609766.859 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609766.859 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609766.962 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609766.962 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609767.064 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609767.064 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609767.167 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609767.167 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609767.269 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609767.269 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609767.371 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609767.372 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609767.474 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609767.474 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609767.577 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609767.577 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609767.680 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609767.680 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609767.783 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609767.783 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609767.886 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609767.886 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609767.988 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609767.989 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609768.091 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609768.092 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609768.194 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609768.195 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609768.297 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609768.297 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609768.400 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609768.400 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609768.503 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609768.503 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609768.607 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609768.607 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609768.710 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609768.710 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609768.812 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609768.813 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609768.915 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609768.916 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609769.019 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609769.019 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609769.122 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609769.122 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609769.224 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609769.225 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609769.327 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609769.328 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609769.430 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609769.431 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609769.533 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609769.534 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609769.636 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609769.637 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609769.739 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609769.739 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609769.842 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609769.842 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609769.945 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609769.945 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609770.048 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609770.048 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609770.151 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609770.151 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609770.254 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609770.254 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609770.357 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609770.358 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609770.460 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609770.461 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609770.563 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609770.564 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609770.667 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609770.667 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609770.770 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609770.770 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609770.873 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609770.873 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609770.975 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609770.976 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609771.078 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609771.079 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609771.181 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609771.181 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609771.284 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609771.284 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609771.387 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609771.387 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609771.490 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609771.490 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609771.593 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609771.593 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609771.696 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609771.696 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609771.799 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609771.799 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609771.902 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609771.902 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609772.005 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609772.005 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609772.108 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609772.108 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609772.211 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609772.211 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609772.314 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609772.314 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609772.417 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609772.417 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609772.520 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609772.520 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609772.623 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609772.623 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609772.726 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609772.726 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609772.829 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609772.829 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609772.932 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609772.932 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609773.034 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609773.035 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609773.137 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609773.137 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609773.240 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609773.240 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609773.345 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609773.346 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609773.448 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609773.449 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609773.551 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609773.552 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609773.655 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609773.656 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609773.758 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609773.758 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609773.861 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609773.862 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609773.964 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609773.964 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609774.067 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609774.067 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609774.170 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609774.170 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609774.274 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609774.274 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609774.377 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609774.377 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609774.480 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609774.480 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609774.583 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609774.583 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609774.686 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609774.686 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609774.789 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609774.789 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609774.892 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609774.892 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609774.995 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609774.995 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609775.097 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609775.098 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609775.200 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609775.201 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609775.303 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609775.304 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609775.406 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609775.406 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609775.509 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609775.509 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609775.612 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609775.612 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609775.715 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609775.715 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609775.818 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609775.818 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609775.921 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609775.921 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609776.023 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609776.024 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609776.126 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609776.127 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609776.229 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609776.229 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609776.332 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609776.332 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609776.435 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609776.435 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609776.538 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609776.538 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609776.641 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609776.641 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609776.744 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609776.744 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609776.847 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609776.847 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609776.950 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609776.950 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609777.053 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609777.053 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609777.155 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609777.156 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609777.258 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609777.258 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609777.361 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609777.361 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609777.465 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609777.466 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609777.568 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609777.569 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609777.673 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609777.673 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609777.776 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609777.776 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609777.879 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609777.879 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609777.982 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609777.982 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609778.085 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609778.085 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609778.188 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609778.188 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609778.291 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609778.291 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609778.393 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609778.393 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609778.496 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609778.496 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609778.599 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609778.599 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609778.702 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609778.702 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609778.805 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609778.805 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609778.908 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609778.908 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609779.011 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609779.011 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609779.114 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609779.114 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609779.216 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609779.217 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609779.319 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609779.320 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609779.422 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609779.422 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609779.525 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609779.525 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609779.628 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609779.628 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609779.731 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609779.731 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609779.834 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609779.834 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609779.937 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609779.937 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609780.040 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609780.040 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609780.143 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609780.143 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609780.246 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609780.246 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609780.349 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609780.349 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609780.452 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609780.452 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609780.554 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609780.555 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609780.657 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609780.658 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609780.761 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609780.761 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609780.864 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609780.865 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609780.968 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609780.968 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609781.070 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609781.071 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609781.173 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609781.174 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609781.277 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609781.277 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609781.380 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609781.380 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609781.483 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609781.483 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609781.586 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609781.586 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609781.688 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609781.689 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609781.791 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609781.792 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609781.894 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609781.894 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609781.997 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609781.997 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609782.100 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609782.100 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609782.203 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609782.203 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609782.311 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609782.311 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609782.414 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609782.414 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609782.516 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609782.517 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609782.619 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609782.619 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609782.722 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609782.722 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609782.825 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609782.825 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609782.929 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609782.929 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609783.031 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609783.032 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609783.134 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609783.135 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609783.237 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609783.238 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609783.340 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609783.340 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609783.443 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609783.443 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609783.546 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609783.546 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609783.649 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609783.649 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609783.752 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609783.752 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609783.855 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609783.855 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609783.958 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609783.958 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609784.061 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609784.061 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609784.164 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609784.164 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609784.267 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609784.267 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609784.370 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609784.370 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609784.475 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609784.475 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609784.578 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609784.578 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609784.680 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609784.681 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609784.783 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609784.783 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609784.886 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609784.886 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609784.989 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609784.989 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609785.092 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609785.092 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609785.198 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609785.199 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609785.301 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |###-----:-|
+1590609785.302 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |###-----:-|
+1590609785.305 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : unschedule ----------------------
+{'cores_per_node': 8,
+ 'gpus_per_node': 1,
+ 'lfs_per_node': {'path': '/tmp', 'size': 1024},
+ 'lm_info': {'version_info': {'FORK': {'version': '0.42',
+                                       'version_detail': 'There is no spoon'}}},
+ 'mem_per_node': 0,
+ 'nodes': [{'core_map': [[0]],
+            'gpu_map': [],
+            'lfs': {'path': '/tmp', 'size': 0},
+            'mem': 0,
+            'name': 'localhost',
+            'uid': 'localhost_0'}]}
+1590609785.305 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : unschedule ----------------------
+{'cores_per_node': 8,
+ 'gpus_per_node': 1,
+ 'lfs_per_node': {'path': '/tmp', 'size': 1024},
+ 'lm_info': {'version_info': {'FORK': {'version': '0.42',
+                                       'version_detail': 'There is no spoon'}}},
+ 'mem_per_node': 0,
+ 'nodes': [{'core_map': [[2]],
+            'gpu_map': [],
+            'lfs': {'path': '/tmp', 'size': 0},
+            'mem': 0,
+            'name': 'localhost',
+            'uid': 'localhost_0'}]}
+1590609785.306 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : unschedule ----------------------
+{'cores_per_node': 8,
+ 'gpus_per_node': 1,
+ 'lfs_per_node': {'path': '/tmp', 'size': 1024},
+ 'lm_info': {'version_info': {'FORK': {'version': '0.42',
+                                       'version_detail': 'There is no spoon'}}},
+ 'mem_per_node': 0,
+ 'nodes': [{'core_map': [[1]],
+            'gpu_map': [],
+            'lfs': {'path': '/tmp', 'size': 0},
+            'mem': 0,
+            'name': 'localhost',
+            'uid': 'localhost_0'}]}
+1590609785.306 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609785.306 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609785.409 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609785.409 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609785.512 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609785.512 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609785.615 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609785.615 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609785.718 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609785.718 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609785.821 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609785.821 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609785.924 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609785.924 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609786.027 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609786.027 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609786.130 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609786.130 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609786.233 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609786.233 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609786.336 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609786.336 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609786.439 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609786.439 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609786.542 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609786.542 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609786.645 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609786.645 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609786.748 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609786.748 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609786.851 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609786.851 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609786.954 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609786.954 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609787.057 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609787.057 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609787.160 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609787.160 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609787.263 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609787.263 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609787.366 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609787.366 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609787.469 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609787.469 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609787.572 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609787.572 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609787.675 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609787.675 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609787.778 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609787.778 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609787.881 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609787.881 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609787.984 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609787.984 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609788.086 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609788.087 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609788.189 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609788.190 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609788.292 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609788.292 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609788.395 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609788.395 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609788.498 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609788.498 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609788.601 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609788.601 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609788.704 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609788.704 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609788.806 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609788.806 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609788.909 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609788.909 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609789.012 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609789.012 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609789.115 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609789.115 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609789.209 : agent_scheduling.0000 : 25356 : 140083395008256 : DEBUG    : command incoming: {'cmd': 'terminate', 'arg': None}
+1590609789.209 : agent_scheduling.0000 : 25356 : 140083395008256 : INFO     : got termination command
+1590609789.228 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: before schedule waitpool      : |--------:-|
+1590609789.228 : agent_scheduling.0000 : 25432 : 140083541092096 : DEBUG    : status: after  schedule waitpool      : |--------:-|
+1590609789.283 : agent_scheduling.0000 : 25356 : 140083395008256 : INFO     : stop agent_scheduling.0000 (25356 : Thread-2) [radical.pilot.utils.component.Continuous._cancel_monitor_cb]
+1590609789.283 : agent_scheduling.0000 : 25356 : 140083395008256 : DEBUG    : _finalize()
+1590609789.283 : agent_scheduling.0000 : 25356 : 140083395008256 : DEBUG    : agent_scheduling.0000 close prof

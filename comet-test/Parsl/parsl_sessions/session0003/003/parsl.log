@@ -1,0 +1,351 @@
+2020-06-12 19:20:30.333 parsl.dataflow.dflow:80 [DEBUG]  Starting DataFlowKernel with config
+Config(
+    app_cache=True, 
+    checkpoint_files=None, 
+    checkpoint_mode=None, 
+    checkpoint_period=None, 
+    data_management_max_threads=10, 
+    executors=[HighThroughputExecutor(
+        address='js-17-185.jetstream-cloud.org', 
+        cores_per_worker=1, 
+        heartbeat_period=30, 
+        heartbeat_threshold=120, 
+        interchange_address='comet-ln2.sdsc.edu', 
+        interchange_port_range=(50100, 50400), 
+        label='comet_htex', 
+        launch_cmd='process_worker_pool.py {debug} {max_workers} -p {prefetch_capacity} -c {cores_per_worker} -m {mem_per_worker} --poll {poll_period} --task_url={task_url} --result_url={result_url} --logdir={logdir} --block_id={{block_id}} --hb_period={heartbeat_period} --hb_threshold={heartbeat_threshold} ', 
+        managed=True, 
+        max_workers=24, 
+        mem_per_worker=None, 
+        poll_period=10, 
+        prefetch_capacity=0, 
+        provider=SlurmProvider(
+            'debug',
+            channel=SSHChannel(
+                'comet-ln2.sdsc.edu',
+                envs={}, 
+                gssapi_auth=False, 
+                password='####', 
+                port=22, 
+                script_dir='/home/aymen/parsl_scripts', 
+                skip_auth=False, 
+                username='aymen'
+            ), 
+            cmd_timeout=10, 
+            exclusive=True, 
+            init_blocks=1, 
+            launcher=SingleNodeLauncher(), 
+            max_blocks=1, 
+            min_blocks=0, 
+            move_files=True, 
+            nodes_per_block=1, 
+            parallelism=24, 
+            scheduler_options='#SBATCH --exclusive\n', 
+            walltime='00:10:00', 
+            worker_init='source parsl-env/bin/activate'
+        ), 
+        storage_access=[], 
+        suppress_failure=False, 
+        worker_debug=True, 
+        worker_logdir_root='/home/aymen/parsl_scripts', 
+        worker_port_range=(50500, 51000), 
+        worker_ports=None, 
+        working_dir='/home/aymen/parsl_scripts'
+    )], 
+    lazy_errors=True, 
+    monitoring=None, 
+    retries=0, 
+    run_dir='runinfo', 
+    strategy=None, 
+    usage_tracking=False
+)
+2020-06-12 19:20:30.334 parsl.dataflow.dflow:81 [INFO]  Parsl version: 0.8.0
+2020-06-12 19:20:30.334 parsl.dataflow.usage_tracking.usage:126 [DEBUG]  Tracking status: False
+2020-06-12 19:20:30.334 parsl.dataflow.usage_tracking.usage:127 [DEBUG]  Testing mode   : False
+2020-06-12 19:20:30.334 parsl.dataflow.dflow:103 [INFO]  Run id is: b8d6b9af-5266-4031-a445-45545755b076
+2020-06-12 19:20:30.450 parsl.dataflow.memoization:52 [INFO]  App caching initialized
+2020-06-12 19:20:33.537 parsl.executors.high_throughput.executor:499 [DEBUG]  Starting queue management thread
+2020-06-12 19:20:33.537 parsl.executors.high_throughput.executor:338 [DEBUG]  [MTHREAD] queue management worker starting
+2020-06-12 19:20:33.537 parsl.executors.high_throughput.executor:503 [DEBUG]  Started queue management thread
+2020-06-12 19:20:33.538 parsl.executors.high_throughput.executor:460 [DEBUG]  Attempting Interchange deployment via channel: SSHChannel(
+    'comet-ln2.sdsc.edu',
+    envs={}, 
+    gssapi_auth=False, 
+    password='xSeDe2017', 
+    port=22, 
+    script_dir='/home/aymen/parsl_scripts', 
+    skip_auth=False, 
+    username='aymen'
+)
+2020-06-12 19:20:33.539 parsl.executors.high_throughput.executor:464 [DEBUG]  Before : 
+htex-interchange {debug} -c={client_address} --client_ports={client_ports} --worker_port_range={worker_port_range} --logdir={logdir} {suppress_failure} --hb_threshold={heartbeat_threshold} 
+
+2020-06-12 19:20:33.539 parsl.executors.high_throughput.executor:481 [DEBUG]  Launch command : 
+source parsl-env/bin/activate
+htex-interchange --debug -c=js-17-185.jetstream-cloud.org --client_ports=50156,50242,50217 --worker_port_range=50500,51000 --logdir=/home/aymen/parsl_scripts/runinfo/003/comet_htex  --hb_threshold=120 
+
+2020-06-12 19:20:44.950 parsl.executors.high_throughput.executor:485 [DEBUG]  Starting Interchange remotely worked
+2020-06-12 19:20:44.951 parsl.executors.high_throughput.executor:487 [DEBUG]  Requesting worker urls 
+2020-06-12 19:20:45.216 parsl.executors.high_throughput.executor:539 [DEBUG]  Got worker urls: ('tcp://comet-ln2.sdsc.edu:50991', 'tcp://comet-ln2.sdsc.edu:50729')
+2020-06-12 19:20:45.216 parsl.executors.high_throughput.executor:489 [DEBUG]  Got worker urls tcp://comet-ln2.sdsc.edu:50991, tcp://comet-ln2.sdsc.edu:50729
+2020-06-12 19:20:45.217 parsl.executors.high_throughput.executor:297 [DEBUG]  Created management thread: <Thread(Thread-3, started daemon 140371904407296)>
+2020-06-12 19:20:45.217 parsl.executors.high_throughput.executor:268 [DEBUG]  Launch command: process_worker_pool.py --debug --max_workers=24 -p 0 -c 1 -m None --poll 10 --task_url=tcp://comet-ln2.sdsc.edu:50991 --result_url=tcp://comet-ln2.sdsc.edu:50729 --logdir=/home/aymen/parsl_scripts/comet_htex --block_id={block_id} --hb_period=30 --hb_threshold=120 
+2020-06-12 19:20:45.217 parsl.executors.high_throughput.executor:271 [DEBUG]  Starting HighThroughputExecutor with provider:
+SlurmProvider(
+    'debug',
+    channel=SSHChannel(
+        'comet-ln2.sdsc.edu',
+        envs={}, 
+        gssapi_auth=False, 
+        password='xSeDe2017', 
+        port=22, 
+        script_dir='/home/aymen/parsl_scripts', 
+        skip_auth=False, 
+        username='aymen'
+    ), 
+    cmd_timeout=10, 
+    exclusive=True, 
+    init_blocks=1, 
+    launcher=SingleNodeLauncher(), 
+    max_blocks=1, 
+    min_blocks=0, 
+    move_files=True, 
+    nodes_per_block=1, 
+    parallelism=24, 
+    scheduler_options='#SBATCH --exclusive\n', 
+    walltime='00:10:00', 
+    worker_init='source parsl-env/bin/activate'
+)
+2020-06-12 19:20:45.222 parsl.providers.slurm.slurm:167 [DEBUG]  Requesting one block with 1 nodes
+2020-06-12 19:20:45.222 parsl.providers.slurm.slurm:184 [DEBUG]  Writing submit script
+2020-06-12 19:20:45.223 parsl.providers.slurm.slurm:188 [DEBUG]  moving files
+2020-06-12 19:20:49.726 parsl.executors.high_throughput.executor:634 [DEBUG]  Launched block 0->34089341
+2020-06-12 19:20:49.727 parsl.dataflow.strategy:125 [DEBUG]  Scaling strategy: None
+2020-06-12 19:20:49.729 parsl.dataflow.dflow:687 [INFO]  Task 0 submitted for App stress_ng, waiting on tasks []
+2020-06-12 19:20:49.730 parsl.dataflow.dflow:697 [DEBUG]  Task 0 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7faae804da10 state=pending> parent=None>
+2020-06-12 19:20:49.730 parsl.executors.high_throughput.executor:601 [DEBUG]  Pushing function <function stress_ng at 0x7faae8038ef0> to queue with args (<function stress_ng at 0x7faae973fa70>,)
+2020-06-12 19:20:49.863 parsl.dataflow.dflow:463 [INFO]  Task 0 launched on executor comet_htex
+2020-06-12 19:20:49.863 parsl.app.futures:77 [DEBUG]  Creating DataFuture with parent: <AppFuture super=<AppFuture at 0x7faae804da10 state=pending> parent=<Future at 0x7faae804dc10 state=pending>>
+2020-06-12 19:20:49.864 parsl.app.futures:78 [DEBUG]  Filepath: /home/aymen/stress_output/stress_ng_0
+2020-06-12 19:20:49.864 parsl.dataflow.dflow:687 [INFO]  Task 1 submitted for App stress_ng, waiting on tasks []
+2020-06-12 19:20:49.865 parsl.dataflow.dflow:697 [DEBUG]  Task 1 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7faae0fbd3d0 state=pending> parent=None>
+2020-06-12 19:20:49.865 parsl.executors.high_throughput.executor:601 [DEBUG]  Pushing function <function stress_ng at 0x7faa8e8fdf80> to queue with args (<function stress_ng at 0x7faae973fa70>,)
+2020-06-12 19:20:49.865 parsl.dataflow.dflow:463 [INFO]  Task 1 launched on executor comet_htex
+2020-06-12 19:20:49.866 parsl.app.futures:77 [DEBUG]  Creating DataFuture with parent: <AppFuture super=<AppFuture at 0x7faae0fbd3d0 state=pending> parent=<Future at 0x7faa8e904d10 state=pending>>
+2020-06-12 19:20:49.866 parsl.app.futures:78 [DEBUG]  Filepath: /home/aymen/stress_output/stress_ng_1
+2020-06-12 19:20:49.866 parsl.dataflow.dflow:687 [INFO]  Task 2 submitted for App stress_ng, waiting on tasks []
+2020-06-12 19:20:49.866 parsl.dataflow.dflow:697 [DEBUG]  Task 2 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7faa8e904f10 state=pending> parent=None>
+2020-06-12 19:20:49.866 parsl.executors.high_throughput.executor:601 [DEBUG]  Pushing function <function stress_ng at 0x7faae0fc39e0> to queue with args (<function stress_ng at 0x7faae973fa70>,)
+2020-06-12 19:20:49.867 parsl.dataflow.dflow:463 [INFO]  Task 2 launched on executor comet_htex
+2020-06-12 19:20:49.867 parsl.app.futures:77 [DEBUG]  Creating DataFuture with parent: <AppFuture super=<AppFuture at 0x7faa8e904f10 state=pending> parent=<Future at 0x7faa8e904f90 state=pending>>
+2020-06-12 19:20:49.867 parsl.app.futures:78 [DEBUG]  Filepath: /home/aymen/stress_output/stress_ng_2
+2020-06-12 19:20:49.868 parsl.dataflow.dflow:687 [INFO]  Task 3 submitted for App stress_ng, waiting on tasks []
+2020-06-12 19:20:49.868 parsl.dataflow.dflow:697 [DEBUG]  Task 3 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7faa8e9131d0 state=pending> parent=None>
+2020-06-12 19:20:49.868 parsl.executors.high_throughput.executor:601 [DEBUG]  Pushing function <function stress_ng at 0x7faacc042710> to queue with args (<function stress_ng at 0x7faae973fa70>,)
+2020-06-12 19:20:49.868 parsl.dataflow.dflow:463 [INFO]  Task 3 launched on executor comet_htex
+2020-06-12 19:20:49.869 parsl.app.futures:77 [DEBUG]  Creating DataFuture with parent: <AppFuture super=<AppFuture at 0x7faa8e9131d0 state=pending> parent=<Future at 0x7faa8e913250 state=pending>>
+2020-06-12 19:20:49.869 parsl.app.futures:78 [DEBUG]  Filepath: /home/aymen/stress_output/stress_ng_3
+2020-06-12 19:20:49.869 parsl.dataflow.dflow:687 [INFO]  Task 4 submitted for App stress_ng, waiting on tasks []
+2020-06-12 19:20:49.869 parsl.dataflow.dflow:697 [DEBUG]  Task 4 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7faa8e913450 state=pending> parent=None>
+2020-06-12 19:20:49.869 parsl.executors.high_throughput.executor:601 [DEBUG]  Pushing function <function stress_ng at 0x7faacc04be60> to queue with args (<function stress_ng at 0x7faae973fa70>,)
+2020-06-12 19:20:49.870 parsl.dataflow.dflow:463 [INFO]  Task 4 launched on executor comet_htex
+2020-06-12 19:20:49.870 parsl.app.futures:77 [DEBUG]  Creating DataFuture with parent: <AppFuture super=<AppFuture at 0x7faa8e913450 state=pending> parent=<Future at 0x7faa8e9134d0 state=pending>>
+2020-06-12 19:20:49.870 parsl.app.futures:78 [DEBUG]  Filepath: /home/aymen/stress_output/stress_ng_4
+2020-06-12 19:20:49.870 parsl.dataflow.dflow:687 [INFO]  Task 5 submitted for App stress_ng, waiting on tasks []
+2020-06-12 19:20:49.870 parsl.dataflow.dflow:697 [DEBUG]  Task 5 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7faa8e913690 state=pending> parent=None>
+2020-06-12 19:20:49.871 parsl.executors.high_throughput.executor:601 [DEBUG]  Pushing function <function stress_ng at 0x7faacc0505f0> to queue with args (<function stress_ng at 0x7faae973fa70>,)
+2020-06-12 19:20:49.871 parsl.dataflow.dflow:463 [INFO]  Task 5 launched on executor comet_htex
+2020-06-12 19:20:49.871 parsl.app.futures:77 [DEBUG]  Creating DataFuture with parent: <AppFuture super=<AppFuture at 0x7faa8e913690 state=pending> parent=<Future at 0x7faa8e9137d0 state=pending>>
+2020-06-12 19:20:49.871 parsl.app.futures:78 [DEBUG]  Filepath: /home/aymen/stress_output/stress_ng_5
+2020-06-12 19:20:49.872 parsl.dataflow.dflow:687 [INFO]  Task 6 submitted for App stress_ng, waiting on tasks []
+2020-06-12 19:20:49.872 parsl.dataflow.dflow:697 [DEBUG]  Task 6 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7faa8e913990 state=pending> parent=None>
+2020-06-12 19:20:49.872 parsl.executors.high_throughput.executor:601 [DEBUG]  Pushing function <function stress_ng at 0x7faa8e943b00> to queue with args (<function stress_ng at 0x7faae973fa70>,)
+2020-06-12 19:20:49.872 parsl.dataflow.dflow:463 [INFO]  Task 6 launched on executor comet_htex
+2020-06-12 19:20:49.873 parsl.app.futures:77 [DEBUG]  Creating DataFuture with parent: <AppFuture super=<AppFuture at 0x7faa8e913990 state=pending> parent=<Future at 0x7faa8e913a10 state=pending>>
+2020-06-12 19:20:49.873 parsl.app.futures:78 [DEBUG]  Filepath: /home/aymen/stress_output/stress_ng_6
+2020-06-12 19:20:49.873 parsl.dataflow.dflow:687 [INFO]  Task 7 submitted for App stress_ng, waiting on tasks []
+2020-06-12 19:20:49.873 parsl.dataflow.dflow:697 [DEBUG]  Task 7 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7faa8e913c10 state=pending> parent=None>
+2020-06-12 19:20:49.873 parsl.executors.high_throughput.executor:601 [DEBUG]  Pushing function <function stress_ng at 0x7faa8e949320> to queue with args (<function stress_ng at 0x7faae973fa70>,)
+2020-06-12 19:20:49.874 parsl.dataflow.dflow:463 [INFO]  Task 7 launched on executor comet_htex
+2020-06-12 19:20:49.874 parsl.app.futures:77 [DEBUG]  Creating DataFuture with parent: <AppFuture super=<AppFuture at 0x7faa8e913c10 state=pending> parent=<Future at 0x7faa8e913c90 state=pending>>
+2020-06-12 19:20:49.874 parsl.app.futures:78 [DEBUG]  Filepath: /home/aymen/stress_output/stress_ng_7
+2020-06-12 19:20:49.874 parsl.dataflow.dflow:687 [INFO]  Task 8 submitted for App stress_ng, waiting on tasks []
+2020-06-12 19:20:49.874 parsl.dataflow.dflow:697 [DEBUG]  Task 8 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7faa8e913e90 state=pending> parent=None>
+2020-06-12 19:20:49.875 parsl.executors.high_throughput.executor:601 [DEBUG]  Pushing function <function stress_ng at 0x7faa8e94d320> to queue with args (<function stress_ng at 0x7faae973fa70>,)
+2020-06-12 19:20:49.875 parsl.dataflow.dflow:463 [INFO]  Task 8 launched on executor comet_htex
+2020-06-12 19:20:49.875 parsl.app.futures:77 [DEBUG]  Creating DataFuture with parent: <AppFuture super=<AppFuture at 0x7faa8e913e90 state=pending> parent=<Future at 0x7faa8e913f10 state=pending>>
+2020-06-12 19:20:49.875 parsl.app.futures:78 [DEBUG]  Filepath: /home/aymen/stress_output/stress_ng_8
+2020-06-12 19:20:49.876 parsl.dataflow.dflow:687 [INFO]  Task 9 submitted for App stress_ng, waiting on tasks []
+2020-06-12 19:20:49.876 parsl.dataflow.dflow:697 [DEBUG]  Task 9 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7faa8e91a090 state=pending> parent=None>
+2020-06-12 19:20:49.876 parsl.executors.high_throughput.executor:601 [DEBUG]  Pushing function <function stress_ng at 0x7faae8050a70> to queue with args (<function stress_ng at 0x7faae973fa70>,)
+2020-06-12 19:20:49.876 parsl.dataflow.dflow:463 [INFO]  Task 9 launched on executor comet_htex
+2020-06-12 19:20:49.877 parsl.app.futures:77 [DEBUG]  Creating DataFuture with parent: <AppFuture super=<AppFuture at 0x7faa8e91a090 state=pending> parent=<Future at 0x7faa8e91a210 state=pending>>
+2020-06-12 19:20:49.877 parsl.app.futures:78 [DEBUG]  Filepath: /home/aymen/stress_output/stress_ng_9
+2020-06-12 19:20:49.877 parsl.dataflow.dflow:687 [INFO]  Task 10 submitted for App stress_ng, waiting on tasks []
+2020-06-12 19:20:49.877 parsl.dataflow.dflow:697 [DEBUG]  Task 10 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7faa8e91a390 state=pending> parent=None>
+2020-06-12 19:20:49.877 parsl.executors.high_throughput.executor:601 [DEBUG]  Pushing function <function stress_ng at 0x7faa8e902050> to queue with args (<function stress_ng at 0x7faae973fa70>,)
+2020-06-12 19:20:49.878 parsl.dataflow.dflow:463 [INFO]  Task 10 launched on executor comet_htex
+2020-06-12 19:20:49.878 parsl.app.futures:77 [DEBUG]  Creating DataFuture with parent: <AppFuture super=<AppFuture at 0x7faa8e91a390 state=pending> parent=<Future at 0x7faa8e91a410 state=pending>>
+2020-06-12 19:20:49.878 parsl.app.futures:78 [DEBUG]  Filepath: /home/aymen/stress_output/stress_ng_10
+2020-06-12 19:20:49.878 parsl.dataflow.dflow:687 [INFO]  Task 11 submitted for App stress_ng, waiting on tasks []
+2020-06-12 19:20:49.878 parsl.dataflow.dflow:697 [DEBUG]  Task 11 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7faa8e91a610 state=pending> parent=None>
+2020-06-12 19:20:49.879 parsl.executors.high_throughput.executor:601 [DEBUG]  Pushing function <function stress_ng at 0x7faa8e902170> to queue with args (<function stress_ng at 0x7faae973fa70>,)
+2020-06-12 19:20:49.879 parsl.dataflow.dflow:463 [INFO]  Task 11 launched on executor comet_htex
+2020-06-12 19:20:49.879 parsl.app.futures:77 [DEBUG]  Creating DataFuture with parent: <AppFuture super=<AppFuture at 0x7faa8e91a610 state=pending> parent=<Future at 0x7faa8e91a690 state=pending>>
+2020-06-12 19:20:49.879 parsl.app.futures:78 [DEBUG]  Filepath: /home/aymen/stress_output/stress_ng_11
+2020-06-12 19:20:49.880 parsl.dataflow.dflow:687 [INFO]  Task 12 submitted for App stress_ng, waiting on tasks []
+2020-06-12 19:20:49.880 parsl.dataflow.dflow:697 [DEBUG]  Task 12 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7faa8e91a890 state=pending> parent=None>
+2020-06-12 19:20:49.880 parsl.executors.high_throughput.executor:601 [DEBUG]  Pushing function <function stress_ng at 0x7faa8e902c20> to queue with args (<function stress_ng at 0x7faae973fa70>,)
+2020-06-12 19:20:49.880 parsl.dataflow.dflow:463 [INFO]  Task 12 launched on executor comet_htex
+2020-06-12 19:20:49.881 parsl.app.futures:77 [DEBUG]  Creating DataFuture with parent: <AppFuture super=<AppFuture at 0x7faa8e91a890 state=pending> parent=<Future at 0x7faa8e91a910 state=pending>>
+2020-06-12 19:20:49.881 parsl.app.futures:78 [DEBUG]  Filepath: /home/aymen/stress_output/stress_ng_12
+2020-06-12 19:20:49.881 parsl.dataflow.dflow:687 [INFO]  Task 13 submitted for App stress_ng, waiting on tasks []
+2020-06-12 19:20:49.881 parsl.dataflow.dflow:697 [DEBUG]  Task 13 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7faa8e91ab10 state=pending> parent=None>
+2020-06-12 19:20:49.881 parsl.executors.high_throughput.executor:601 [DEBUG]  Pushing function <function stress_ng at 0x7faa8e909680> to queue with args (<function stress_ng at 0x7faae973fa70>,)
+2020-06-12 19:20:49.882 parsl.dataflow.dflow:463 [INFO]  Task 13 launched on executor comet_htex
+2020-06-12 19:20:49.882 parsl.app.futures:77 [DEBUG]  Creating DataFuture with parent: <AppFuture super=<AppFuture at 0x7faa8e91ab10 state=pending> parent=<Future at 0x7faa8e91ab90 state=pending>>
+2020-06-12 19:20:49.882 parsl.app.futures:78 [DEBUG]  Filepath: /home/aymen/stress_output/stress_ng_13
+2020-06-12 19:20:49.882 parsl.dataflow.dflow:687 [INFO]  Task 14 submitted for App stress_ng, waiting on tasks []
+2020-06-12 19:20:49.882 parsl.dataflow.dflow:697 [DEBUG]  Task 14 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7faa8e91ad90 state=pending> parent=None>
+2020-06-12 19:20:49.883 parsl.executors.high_throughput.executor:601 [DEBUG]  Pushing function <function stress_ng at 0x7faa8e909710> to queue with args (<function stress_ng at 0x7faae973fa70>,)
+2020-06-12 19:20:49.883 parsl.dataflow.dflow:463 [INFO]  Task 14 launched on executor comet_htex
+2020-06-12 19:20:49.883 parsl.app.futures:77 [DEBUG]  Creating DataFuture with parent: <AppFuture super=<AppFuture at 0x7faa8e91ad90 state=pending> parent=<Future at 0x7faa8e91ae10 state=pending>>
+2020-06-12 19:20:49.883 parsl.app.futures:78 [DEBUG]  Filepath: /home/aymen/stress_output/stress_ng_14
+2020-06-12 19:20:49.884 parsl.dataflow.dflow:687 [INFO]  Task 15 submitted for App stress_ng, waiting on tasks []
+2020-06-12 19:20:49.884 parsl.dataflow.dflow:697 [DEBUG]  Task 15 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7faa8e927090 state=pending> parent=None>
+2020-06-12 19:20:49.884 parsl.executors.high_throughput.executor:601 [DEBUG]  Pushing function <function stress_ng at 0x7faa8e9097a0> to queue with args (<function stress_ng at 0x7faae973fa70>,)
+2020-06-12 19:20:49.884 parsl.dataflow.dflow:463 [INFO]  Task 15 launched on executor comet_htex
+2020-06-12 19:20:49.885 parsl.app.futures:77 [DEBUG]  Creating DataFuture with parent: <AppFuture super=<AppFuture at 0x7faa8e927090 state=pending> parent=<Future at 0x7faa8e9270d0 state=pending>>
+2020-06-12 19:20:49.885 parsl.app.futures:78 [DEBUG]  Filepath: /home/aymen/stress_output/stress_ng_15
+2020-06-12 19:20:49.885 parsl.dataflow.dflow:687 [INFO]  Task 16 submitted for App stress_ng, waiting on tasks []
+2020-06-12 19:20:49.886 parsl.dataflow.dflow:697 [DEBUG]  Task 16 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7faa8e9272d0 state=pending> parent=None>
+2020-06-12 19:20:49.886 parsl.executors.high_throughput.executor:601 [DEBUG]  Pushing function <function stress_ng at 0x7faa8e909830> to queue with args (<function stress_ng at 0x7faae973fa70>,)
+2020-06-12 19:20:49.886 parsl.dataflow.dflow:463 [INFO]  Task 16 launched on executor comet_htex
+2020-06-12 19:20:49.887 parsl.app.futures:77 [DEBUG]  Creating DataFuture with parent: <AppFuture super=<AppFuture at 0x7faa8e9272d0 state=pending> parent=<Future at 0x7faa8e927350 state=pending>>
+2020-06-12 19:20:49.887 parsl.app.futures:78 [DEBUG]  Filepath: /home/aymen/stress_output/stress_ng_16
+2020-06-12 19:20:49.887 parsl.dataflow.dflow:687 [INFO]  Task 17 submitted for App stress_ng, waiting on tasks []
+2020-06-12 19:20:49.887 parsl.dataflow.dflow:697 [DEBUG]  Task 17 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7faa8e927550 state=pending> parent=None>
+2020-06-12 19:20:49.887 parsl.executors.high_throughput.executor:601 [DEBUG]  Pushing function <function stress_ng at 0x7faa8e9098c0> to queue with args (<function stress_ng at 0x7faae973fa70>,)
+2020-06-12 19:20:49.888 parsl.dataflow.dflow:463 [INFO]  Task 17 launched on executor comet_htex
+2020-06-12 19:20:49.888 parsl.app.futures:77 [DEBUG]  Creating DataFuture with parent: <AppFuture super=<AppFuture at 0x7faa8e927550 state=pending> parent=<Future at 0x7faa8e9275d0 state=pending>>
+2020-06-12 19:20:49.888 parsl.app.futures:78 [DEBUG]  Filepath: /home/aymen/stress_output/stress_ng_17
+2020-06-12 19:20:49.888 parsl.dataflow.dflow:687 [INFO]  Task 18 submitted for App stress_ng, waiting on tasks []
+2020-06-12 19:20:49.889 parsl.dataflow.dflow:697 [DEBUG]  Task 18 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7faa8e9277d0 state=pending> parent=None>
+2020-06-12 19:20:49.889 parsl.executors.high_throughput.executor:601 [DEBUG]  Pushing function <function stress_ng at 0x7faa8e909950> to queue with args (<function stress_ng at 0x7faae973fa70>,)
+2020-06-12 19:20:49.889 parsl.dataflow.dflow:463 [INFO]  Task 18 launched on executor comet_htex
+2020-06-12 19:20:49.889 parsl.app.futures:77 [DEBUG]  Creating DataFuture with parent: <AppFuture super=<AppFuture at 0x7faa8e9277d0 state=pending> parent=<Future at 0x7faa8e927850 state=pending>>
+2020-06-12 19:20:49.889 parsl.app.futures:78 [DEBUG]  Filepath: /home/aymen/stress_output/stress_ng_18
+2020-06-12 19:20:49.890 parsl.dataflow.dflow:687 [INFO]  Task 19 submitted for App stress_ng, waiting on tasks []
+2020-06-12 19:20:49.890 parsl.dataflow.dflow:697 [DEBUG]  Task 19 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7faa8e927a50 state=pending> parent=None>
+2020-06-12 19:20:49.890 parsl.executors.high_throughput.executor:601 [DEBUG]  Pushing function <function stress_ng at 0x7faa8e9099e0> to queue with args (<function stress_ng at 0x7faae973fa70>,)
+2020-06-12 19:20:49.890 parsl.dataflow.dflow:463 [INFO]  Task 19 launched on executor comet_htex
+2020-06-12 19:20:49.891 parsl.app.futures:77 [DEBUG]  Creating DataFuture with parent: <AppFuture super=<AppFuture at 0x7faa8e927a50 state=pending> parent=<Future at 0x7faa8e927b10 state=pending>>
+2020-06-12 19:20:49.891 parsl.app.futures:78 [DEBUG]  Filepath: /home/aymen/stress_output/stress_ng_19
+2020-06-12 19:20:49.891 parsl.dataflow.dflow:687 [INFO]  Task 20 submitted for App stress_ng, waiting on tasks []
+2020-06-12 19:20:49.891 parsl.dataflow.dflow:697 [DEBUG]  Task 20 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7faa8e927d10 state=pending> parent=None>
+2020-06-12 19:20:49.891 parsl.executors.high_throughput.executor:601 [DEBUG]  Pushing function <function stress_ng at 0x7faa8e909a70> to queue with args (<function stress_ng at 0x7faae973fa70>,)
+2020-06-12 19:20:49.892 parsl.dataflow.dflow:463 [INFO]  Task 20 launched on executor comet_htex
+2020-06-12 19:20:49.892 parsl.app.futures:77 [DEBUG]  Creating DataFuture with parent: <AppFuture super=<AppFuture at 0x7faa8e927d10 state=pending> parent=<Future at 0x7faa8e927e10 state=pending>>
+2020-06-12 19:20:49.892 parsl.app.futures:78 [DEBUG]  Filepath: /home/aymen/stress_output/stress_ng_20
+2020-06-12 19:20:49.893 parsl.dataflow.dflow:687 [INFO]  Task 21 submitted for App stress_ng, waiting on tasks []
+2020-06-12 19:20:49.893 parsl.dataflow.dflow:697 [DEBUG]  Task 21 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7faa8e8b2110 state=pending> parent=None>
+2020-06-12 19:20:49.893 parsl.executors.high_throughput.executor:601 [DEBUG]  Pushing function <function stress_ng at 0x7faa8e909b00> to queue with args (<function stress_ng at 0x7faae973fa70>,)
+2020-06-12 19:20:49.893 parsl.dataflow.dflow:463 [INFO]  Task 21 launched on executor comet_htex
+2020-06-12 19:20:49.894 parsl.app.futures:77 [DEBUG]  Creating DataFuture with parent: <AppFuture super=<AppFuture at 0x7faa8e8b2110 state=pending> parent=<Future at 0x7faa8e8b2150 state=pending>>
+2020-06-12 19:20:49.894 parsl.app.futures:78 [DEBUG]  Filepath: /home/aymen/stress_output/stress_ng_21
+2020-06-12 19:20:49.894 parsl.dataflow.dflow:687 [INFO]  Task 22 submitted for App stress_ng, waiting on tasks []
+2020-06-12 19:20:49.894 parsl.dataflow.dflow:697 [DEBUG]  Task 22 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7faa8e8b2350 state=pending> parent=None>
+2020-06-12 19:20:49.894 parsl.executors.high_throughput.executor:601 [DEBUG]  Pushing function <function stress_ng at 0x7faa8e909b90> to queue with args (<function stress_ng at 0x7faae973fa70>,)
+2020-06-12 19:20:49.895 parsl.dataflow.dflow:463 [INFO]  Task 22 launched on executor comet_htex
+2020-06-12 19:20:49.895 parsl.app.futures:77 [DEBUG]  Creating DataFuture with parent: <AppFuture super=<AppFuture at 0x7faa8e8b2350 state=pending> parent=<Future at 0x7faa8e8b2450 state=pending>>
+2020-06-12 19:20:49.895 parsl.app.futures:78 [DEBUG]  Filepath: /home/aymen/stress_output/stress_ng_22
+2020-06-12 19:20:49.895 parsl.dataflow.dflow:687 [INFO]  Task 23 submitted for App stress_ng, waiting on tasks []
+2020-06-12 19:20:49.895 parsl.dataflow.dflow:697 [DEBUG]  Task 23 set to pending state with AppFuture: <AppFuture super=<AppFuture at 0x7faa8e8b2650 state=pending> parent=None>
+2020-06-12 19:20:49.895 parsl.executors.high_throughput.executor:601 [DEBUG]  Pushing function <function stress_ng at 0x7faa8e909c20> to queue with args (<function stress_ng at 0x7faae973fa70>,)
+2020-06-12 19:20:49.896 parsl.dataflow.dflow:463 [INFO]  Task 23 launched on executor comet_htex
+2020-06-12 19:20:49.896 parsl.app.futures:77 [DEBUG]  Creating DataFuture with parent: <AppFuture super=<AppFuture at 0x7faa8e8b2650 state=pending> parent=<Future at 0x7faa8e8b2750 state=pending>>
+2020-06-12 19:20:49.896 parsl.app.futures:78 [DEBUG]  Filepath: /home/aymen/stress_output/stress_ng_23
+2020-06-12 19:26:04.042 parsl.dataflow.dflow:280 [INFO]  Task 4 completed
+2020-06-12 19:26:04.043 parsl.dataflow.dflow:284 [INFO]  Standard output for task 4 available at /home/aymen/stress_output/stress_ng.stdout
+2020-06-12 19:26:04.043 parsl.dataflow.dflow:286 [INFO]  Standard error for task 4 available at /home/aymen/stress_output/stress_ng.stderr
+2020-06-12 19:26:04.043 parsl.dataflow.dflow:280 [INFO]  Task 3 completed
+2020-06-12 19:26:04.044 parsl.dataflow.dflow:284 [INFO]  Standard output for task 3 available at /home/aymen/stress_output/stress_ng.stdout
+2020-06-12 19:26:04.044 parsl.dataflow.dflow:286 [INFO]  Standard error for task 3 available at /home/aymen/stress_output/stress_ng.stderr
+2020-06-12 19:26:04.055 parsl.dataflow.dflow:280 [INFO]  Task 0 completed
+2020-06-12 19:26:04.055 parsl.dataflow.dflow:284 [INFO]  Standard output for task 0 available at /home/aymen/stress_output/stress_ng.stdout
+2020-06-12 19:26:04.056 parsl.dataflow.dflow:286 [INFO]  Standard error for task 0 available at /home/aymen/stress_output/stress_ng.stderr
+2020-06-12 19:26:04.056 parsl.dataflow.dflow:280 [INFO]  Task 5 completed
+2020-06-12 19:26:04.056 parsl.dataflow.dflow:284 [INFO]  Standard output for task 5 available at /home/aymen/stress_output/stress_ng.stdout
+2020-06-12 19:26:04.056 parsl.dataflow.dflow:286 [INFO]  Standard error for task 5 available at /home/aymen/stress_output/stress_ng.stderr
+2020-06-12 19:26:04.057 parsl.dataflow.dflow:280 [INFO]  Task 1 completed
+2020-06-12 19:26:04.057 parsl.dataflow.dflow:284 [INFO]  Standard output for task 1 available at /home/aymen/stress_output/stress_ng.stdout
+2020-06-12 19:26:04.057 parsl.dataflow.dflow:286 [INFO]  Standard error for task 1 available at /home/aymen/stress_output/stress_ng.stderr
+2020-06-12 19:26:04.057 parsl.dataflow.dflow:280 [INFO]  Task 2 completed
+2020-06-12 19:26:04.057 parsl.dataflow.dflow:284 [INFO]  Standard output for task 2 available at /home/aymen/stress_output/stress_ng.stdout
+2020-06-12 19:26:04.057 parsl.dataflow.dflow:286 [INFO]  Standard error for task 2 available at /home/aymen/stress_output/stress_ng.stderr
+2020-06-12 19:26:04.146 parsl.dataflow.dflow:280 [INFO]  Task 6 completed
+2020-06-12 19:26:04.146 parsl.dataflow.dflow:284 [INFO]  Standard output for task 6 available at /home/aymen/stress_output/stress_ng.stdout
+2020-06-12 19:26:04.146 parsl.dataflow.dflow:286 [INFO]  Standard error for task 6 available at /home/aymen/stress_output/stress_ng.stderr
+2020-06-12 19:26:04.368 parsl.dataflow.dflow:280 [INFO]  Task 7 completed
+2020-06-12 19:26:04.368 parsl.dataflow.dflow:284 [INFO]  Standard output for task 7 available at /home/aymen/stress_output/stress_ng.stdout
+2020-06-12 19:26:04.368 parsl.dataflow.dflow:286 [INFO]  Standard error for task 7 available at /home/aymen/stress_output/stress_ng.stderr
+2020-06-12 19:26:04.653 parsl.dataflow.dflow:280 [INFO]  Task 8 completed
+2020-06-12 19:26:04.653 parsl.dataflow.dflow:284 [INFO]  Standard output for task 8 available at /home/aymen/stress_output/stress_ng.stdout
+2020-06-12 19:26:04.653 parsl.dataflow.dflow:286 [INFO]  Standard error for task 8 available at /home/aymen/stress_output/stress_ng.stderr
+2020-06-12 19:26:04.667 parsl.dataflow.dflow:280 [INFO]  Task 15 completed
+2020-06-12 19:26:04.668 parsl.dataflow.dflow:284 [INFO]  Standard output for task 15 available at /home/aymen/stress_output/stress_ng.stdout
+2020-06-12 19:26:04.668 parsl.dataflow.dflow:286 [INFO]  Standard error for task 15 available at /home/aymen/stress_output/stress_ng.stderr
+2020-06-12 19:26:04.694 parsl.dataflow.dflow:280 [INFO]  Task 9 completed
+2020-06-12 19:26:04.694 parsl.dataflow.dflow:284 [INFO]  Standard output for task 9 available at /home/aymen/stress_output/stress_ng.stdout
+2020-06-12 19:26:04.694 parsl.dataflow.dflow:286 [INFO]  Standard error for task 9 available at /home/aymen/stress_output/stress_ng.stderr
+2020-06-12 19:26:04.694 parsl.dataflow.dflow:280 [INFO]  Task 11 completed
+2020-06-12 19:26:04.694 parsl.dataflow.dflow:284 [INFO]  Standard output for task 11 available at /home/aymen/stress_output/stress_ng.stdout
+2020-06-12 19:26:04.695 parsl.dataflow.dflow:286 [INFO]  Standard error for task 11 available at /home/aymen/stress_output/stress_ng.stderr
+2020-06-12 19:26:04.706 parsl.dataflow.dflow:280 [INFO]  Task 16 completed
+2020-06-12 19:26:04.706 parsl.dataflow.dflow:284 [INFO]  Standard output for task 16 available at /home/aymen/stress_output/stress_ng.stdout
+2020-06-12 19:26:04.706 parsl.dataflow.dflow:286 [INFO]  Standard error for task 16 available at /home/aymen/stress_output/stress_ng.stderr
+2020-06-12 19:26:04.706 parsl.dataflow.dflow:280 [INFO]  Task 10 completed
+2020-06-12 19:26:04.706 parsl.dataflow.dflow:284 [INFO]  Standard output for task 10 available at /home/aymen/stress_output/stress_ng.stdout
+2020-06-12 19:26:04.707 parsl.dataflow.dflow:286 [INFO]  Standard error for task 10 available at /home/aymen/stress_output/stress_ng.stderr
+2020-06-12 19:26:04.931 parsl.dataflow.dflow:280 [INFO]  Task 12 completed
+2020-06-12 19:26:04.932 parsl.dataflow.dflow:284 [INFO]  Standard output for task 12 available at /home/aymen/stress_output/stress_ng.stdout
+2020-06-12 19:26:04.932 parsl.dataflow.dflow:286 [INFO]  Standard error for task 12 available at /home/aymen/stress_output/stress_ng.stderr
+2020-06-12 19:26:04.959 parsl.dataflow.dflow:280 [INFO]  Task 17 completed
+2020-06-12 19:26:04.959 parsl.dataflow.dflow:284 [INFO]  Standard output for task 17 available at /home/aymen/stress_output/stress_ng.stdout
+2020-06-12 19:26:04.960 parsl.dataflow.dflow:286 [INFO]  Standard error for task 17 available at /home/aymen/stress_output/stress_ng.stderr
+2020-06-12 19:26:04.960 parsl.dataflow.dflow:280 [INFO]  Task 20 completed
+2020-06-12 19:26:04.960 parsl.dataflow.dflow:284 [INFO]  Standard output for task 20 available at /home/aymen/stress_output/stress_ng.stdout
+2020-06-12 19:26:04.960 parsl.dataflow.dflow:286 [INFO]  Standard error for task 20 available at /home/aymen/stress_output/stress_ng.stderr
+2020-06-12 19:26:04.960 parsl.dataflow.dflow:280 [INFO]  Task 19 completed
+2020-06-12 19:26:04.961 parsl.dataflow.dflow:284 [INFO]  Standard output for task 19 available at /home/aymen/stress_output/stress_ng.stdout
+2020-06-12 19:26:04.961 parsl.dataflow.dflow:286 [INFO]  Standard error for task 19 available at /home/aymen/stress_output/stress_ng.stderr
+2020-06-12 19:26:04.961 parsl.dataflow.dflow:280 [INFO]  Task 22 completed
+2020-06-12 19:26:04.961 parsl.dataflow.dflow:284 [INFO]  Standard output for task 22 available at /home/aymen/stress_output/stress_ng.stdout
+2020-06-12 19:26:04.961 parsl.dataflow.dflow:286 [INFO]  Standard error for task 22 available at /home/aymen/stress_output/stress_ng.stderr
+2020-06-12 19:26:04.961 parsl.dataflow.dflow:280 [INFO]  Task 21 completed
+2020-06-12 19:26:04.962 parsl.dataflow.dflow:284 [INFO]  Standard output for task 21 available at /home/aymen/stress_output/stress_ng.stdout
+2020-06-12 19:26:04.962 parsl.dataflow.dflow:286 [INFO]  Standard error for task 21 available at /home/aymen/stress_output/stress_ng.stderr
+2020-06-12 19:26:04.962 parsl.dataflow.dflow:280 [INFO]  Task 18 completed
+2020-06-12 19:26:04.962 parsl.dataflow.dflow:284 [INFO]  Standard output for task 18 available at /home/aymen/stress_output/stress_ng.stdout
+2020-06-12 19:26:04.962 parsl.dataflow.dflow:286 [INFO]  Standard error for task 18 available at /home/aymen/stress_output/stress_ng.stderr
+2020-06-12 19:26:04.976 parsl.dataflow.dflow:280 [INFO]  Task 23 completed
+2020-06-12 19:26:04.976 parsl.dataflow.dflow:284 [INFO]  Standard output for task 23 available at /home/aymen/stress_output/stress_ng.stdout
+2020-06-12 19:26:04.977 parsl.dataflow.dflow:286 [INFO]  Standard error for task 23 available at /home/aymen/stress_output/stress_ng.stderr
+2020-06-12 19:26:04.977 parsl.dataflow.dflow:280 [INFO]  Task 13 completed
+2020-06-12 19:26:04.977 parsl.dataflow.dflow:284 [INFO]  Standard output for task 13 available at /home/aymen/stress_output/stress_ng.stdout
+2020-06-12 19:26:04.977 parsl.dataflow.dflow:286 [INFO]  Standard error for task 13 available at /home/aymen/stress_output/stress_ng.stderr
+2020-06-12 19:26:04.977 parsl.dataflow.dflow:280 [INFO]  Task 14 completed
+2020-06-12 19:26:04.978 parsl.dataflow.dflow:284 [INFO]  Standard output for task 14 available at /home/aymen/stress_output/stress_ng.stdout
+2020-06-12 19:26:04.978 parsl.dataflow.dflow:286 [INFO]  Standard error for task 14 available at /home/aymen/stress_output/stress_ng.stderr
+2020-06-12 19:26:04.980 parsl.dataflow.dflow:822 [INFO]  DFK cleanup initiated
+2020-06-12 19:26:04.980 parsl.dataflow.dflow:733 [INFO]  Summary of tasks in DFK:
+2020-06-12 19:26:04.980 parsl.dataflow.dflow:764 [INFO]  Tasks in state States.done: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23
+2020-06-12 19:26:04.980 parsl.dataflow.dflow:771 [INFO]  End of summary
+2020-06-12 19:26:04.981 parsl.dataflow.dflow:846 [INFO]  Terminating flow_control and strategy threads
+2020-06-12 19:26:05.023 parsl.executors.high_throughput.executor:571 [DEBUG]  [HOLD_BLOCK]: Sending hold to manager: 9f36709e531e
+2020-06-12 19:26:05.064 parsl.executors.high_throughput.executor:521 [DEBUG]  Sent hold request to worker: 9f36709e531e
+2020-06-12 19:26:07.795 parsl.executors.high_throughput.executor:705 [INFO]  Attempting HighThroughputExecutor shutdown
+2020-06-12 19:26:07.836 parsl.executors.high_throughput.executor:529 [DEBUG]  Sent shutdown command to interchange
+2020-06-12 19:26:07.837 parsl.executors.high_throughput.executor:711 [INFO]  Finished HighThroughputExecutor shutdown attempt
+2020-06-12 19:26:07.837 parsl.data_provider.data_manager:98 [DEBUG]  Done with executor shutdown
+2020-06-12 19:26:07.837 parsl.dataflow.dflow:878 [INFO]  DFK cleanup complete

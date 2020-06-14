@@ -1,0 +1,7 @@
+1590609858.924 : pmgr_launching.0000  : 24163 : 140579287582464 : ERROR    : finalization error
+Traceback (most recent call last):
+  File "/home/aymen/iwp/lib/python3.7/site-packages/radical/pilot/pmgr/launching/default.py", line 96, in finalize
+    rpc.PMGR_LAUNCHING_QUEUE, self.work)
+  File "/home/aymen/iwp/lib/python3.7/site-packages/radical/pilot/utils/component.py", line 722, in unregister_input
+    self._inputs[name]['queue'].stop()
+AttributeError: 'Getter' object has no attribute 'stop'

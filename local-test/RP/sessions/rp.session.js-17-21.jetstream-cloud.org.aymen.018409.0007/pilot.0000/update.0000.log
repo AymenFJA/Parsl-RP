@@ -1,0 +1,24 @@
+1590609763.562 : update.0000          : 25389 : 140213616785152 : INFO     : connect pub to log_pubsub: tcp://172.27.61.10:43172
+1590609763.563 : update.0000          : 25389 : 140213616785152 : DEBUG    : registered publisher for log_pubsub
+1590609763.564 : update.0000          : 25389 : 140213616785152 : INFO     : connect pub to state_pubsub: tcp://172.27.61.10:41651
+1590609763.564 : update.0000          : 25389 : 140213616785152 : DEBUG    : registered publisher for state_pubsub
+1590609763.565 : update.0000          : 25389 : 140213616785152 : INFO     : connect pub to control_pubsub: tcp://172.27.61.10:43156
+1590609763.565 : update.0000          : 25389 : 140213616785152 : DEBUG    : registered publisher for control_pubsub
+1590609763.566 : update.0000          : 25389 : 140213616785152 : INFO     : connect sub to control_pubsub: tcp://172.27.61.10:42070
+1590609763.567 : update.0000          : 25389 : 140213616785152 : DEBUG    : ~~ control_pubsub: ?
+1590609763.567 : update.0000          : 25389 : 140213616785152 : DEBUG    : ~~ control_pubsub: control_pubsub
+1590609763.571 : update.0000          : 25389 : 140213616785152 : INFO     : connect sub to state_pubsub: tcp://172.27.61.10:40137
+1590609763.586 : update.0000          : 25389 : 140213616785152 : DEBUG    : ~~ state_pubsub: ?
+1590609763.586 : update.0000          : 25389 : 140213616785152 : DEBUG    : ~~ state_pubsub: state_pubsub
+1590609763.586 : update.0000          : 25389 : 140213616785152 : DEBUG    : START: update.0000 register idler update.0000.idler._idle_cb
+1590609763.587 : update.0000          : 25389 : 140212940293888 : DEBUG    : start idle thread: <bound method Update._idle_cb of <radical.pilot.worker.update.Update object at 0x7f8607084048>>
+1590609763.587 : update.0000          : 25389 : 140213616785152 : DEBUG    : update.0000 registered idler update.0000.idler._idle_cb
+1590609763.663 : update.0000          : 25389 : 140213788837632 : DEBUG    : start heartbeat
+1590609763.664 : update.0000          : 25389 : 140213788837632 : INFO     : connect sub to heartbeat: tcp://172.27.61.10:42993
+1590609763.665 : update.0000          : 25389 : 140213788837632 : DEBUG    : ~~ heartbeat: ?
+1590609763.665 : update.0000          : 25389 : 140213788837632 : DEBUG    : ~~ heartbeat: heartbeat
+1590609789.214 : update.0000          : 25389 : 140213334554368 : DEBUG    : command incoming: {'cmd': 'terminate', 'arg': None}
+1590609789.214 : update.0000          : 25389 : 140213334554368 : INFO     : got termination command
+1590609789.282 : update.0000          : 25389 : 140213334554368 : INFO     : stop update.0000 (25389 : Thread-2) [radical.pilot.utils.component.Update._cancel_monitor_cb]
+1590609789.283 : update.0000          : 25389 : 140213334554368 : DEBUG    : _finalize()
+1590609789.283 : update.0000          : 25389 : 140213334554368 : DEBUG    : update.0000 close prof

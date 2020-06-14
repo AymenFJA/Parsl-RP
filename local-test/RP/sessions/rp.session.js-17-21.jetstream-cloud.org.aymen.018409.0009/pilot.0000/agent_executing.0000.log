@@ -1,0 +1,60 @@
+1590611317.364 : agent_executing.0000 : 30206 : 139792881796864 : INFO     : connect pub to log_pubsub: tcp://172.27.61.10:46233
+1590611317.365 : agent_executing.0000 : 30206 : 139792881796864 : DEBUG    : registered publisher for log_pubsub
+1590611317.366 : agent_executing.0000 : 30206 : 139792881796864 : INFO     : connect pub to state_pubsub: tcp://172.27.61.10:32943
+1590611317.367 : agent_executing.0000 : 30206 : 139792881796864 : DEBUG    : registered publisher for state_pubsub
+1590611317.368 : agent_executing.0000 : 30206 : 139792881796864 : INFO     : connect pub to control_pubsub: tcp://172.27.61.10:45086
+1590611317.368 : agent_executing.0000 : 30206 : 139792881796864 : DEBUG    : registered publisher for control_pubsub
+1590611317.369 : agent_executing.0000 : 30206 : 139792881796864 : INFO     : connect sub to control_pubsub: tcp://172.27.61.10:33788
+1590611317.370 : agent_executing.0000 : 30206 : 139792881796864 : DEBUG    : ~~ control_pubsub: ?
+1590611317.370 : agent_executing.0000 : 30206 : 139792881796864 : DEBUG    : ~~ control_pubsub: control_pubsub
+1590611317.370 : agent_executing.0000 : 30206 : 139792881796864 : INFO     : connect get to agent_executing_queue: tcp://172.27.61.10:41866
+1590611317.388 : agent_executing.0000 : 30206 : 139792881796864 : DEBUG    : registered input agent_executing.0000.work.AGENT_EXECUTING_PENDING
+1590611317.388 : agent_executing.0000 : 30206 : 139792881796864 : DEBUG    : agent_executing.0000 register input AGENT_EXECUTING_PENDING: agent_executing.0000.work.AGENT_EXECUTING_PENDING
+1590611317.388 : agent_executing.0000 : 30206 : 139792881796864 : DEBUG    : registered worker work [AGENT_EXECUTING_PENDING]
+1590611317.388 : agent_executing.0000 : 30206 : 139792881796864 : DEBUG    : agent_executing.0000 register output AGENT_STAGING_OUTPUT_PENDING:agent_staging_output_queue
+1590611317.390 : agent_executing.0000 : 30206 : 139792881796864 : INFO     : connect pub to agent_unschedule_pubsub: tcp://172.27.61.10:36104
+1590611317.390 : agent_executing.0000 : 30206 : 139792881796864 : DEBUG    : registered publisher for agent_unschedule_pubsub
+1590611317.391 : agent_executing.0000 : 30206 : 139792881796864 : DEBUG    : ~~ control_pubsub: ?
+1590611317.391 : agent_executing.0000 : 30206 : 139792881796864 : DEBUG    : ~~ control_pubsub: control_pubsub
+1590611317.414 : agent_executing.0000 : 30206 : 139792881796864 : DEBUG    : -> agent_executing_queue (3) [True ]: ?
+1590611317.414 : agent_executing.0000 : 30206 : 139792881796864 : DEBUG    : -> agent_executing_queue (3) [True ]: request 30206
+1590611317.466 : agent_executing.0000 : 30206 : 139793053849344 : DEBUG    : start heartbeat
+1590611317.467 : agent_executing.0000 : 30206 : 139793053849344 : INFO     : connect sub to heartbeat: tcp://172.27.61.10:37390
+1590611317.469 : agent_executing.0000 : 30206 : 139793053849344 : DEBUG    : ~~ heartbeat: ?
+1590611317.469 : agent_executing.0000 : 30206 : 139793053849344 : DEBUG    : ~~ heartbeat: heartbeat
+1590611321.520 : agent_executing.0000 : 30206 : 139792881796864 : DEBUG    : <- agent_executing_queue (3) [False]: unit.000000 [AGENT_EXECUTING_PENDING]
+1590611321.521 : agent_executing.0000 : 30206 : 139792881796864 : DEBUG    : got unit (unit.000000)
+1590611321.521 : agent_executing.0000 : 30206 : 139792881796864 : DEBUG    : advance bulk: 1 [False, True]
+1590611321.521 : agent_executing.0000 : 30206 : 139792881796864 : DEBUG    : Launching unit with FORK ().
+1590611321.521 : agent_executing.0000 : 30206 : 139792881796864 : DEBUG    : Created launch_script: /home/aymen/radical.pilot.sandbox/rp.session.js-17-21.jetstream-cloud.org.aymen.018409.0009/pilot.0000/unit.000000//unit.000000.sh
+1590611321.523 : agent_executing.0000 : 30206 : 139792881796864 : INFO     : Launching unit unit.000000 via /home/aymen/radical.pilot.sandbox/rp.session.js-17-21.jetstream-cloud.org.aymen.018409.0009/pilot.0000/unit.000000//unit.000000.sh in /home/aymen/radical.pilot.sandbox/rp.session.js-17-21.jetstream-cloud.org.aymen.018409.0009/pilot.0000/unit.000000/
+1590611321.530 : agent_executing.0000 : 30206 : 139792881796864 : DEBUG    : -> agent_executing_queue (3) [True ]: ?
+1590611321.530 : agent_executing.0000 : 30206 : 139792881796864 : DEBUG    : -> agent_executing_queue (3) [True ]: request 30206
+1590611321.531 : agent_executing.0000 : 30206 : 139792881796864 : DEBUG    : <- agent_executing_queue (3) [False]: unit.000001 [AGENT_EXECUTING_PENDING]
+1590611321.531 : agent_executing.0000 : 30206 : 139792881796864 : DEBUG    : <- agent_executing_queue (3) [False]: unit.000002 [AGENT_EXECUTING_PENDING]
+1590611321.532 : agent_executing.0000 : 30206 : 139792881796864 : DEBUG    : got unit (unit.000001)
+1590611321.532 : agent_executing.0000 : 30206 : 139792881796864 : DEBUG    : got unit (unit.000002)
+1590611321.532 : agent_executing.0000 : 30206 : 139792881796864 : DEBUG    : advance bulk: 2 [False, True]
+1590611321.532 : agent_executing.0000 : 30206 : 139792881796864 : DEBUG    : Launching unit with FORK ().
+1590611321.532 : agent_executing.0000 : 30206 : 139792881796864 : DEBUG    : Created launch_script: /home/aymen/radical.pilot.sandbox/rp.session.js-17-21.jetstream-cloud.org.aymen.018409.0009/pilot.0000/unit.000001//unit.000001.sh
+1590611321.533 : agent_executing.0000 : 30206 : 139792881796864 : INFO     : Launching unit unit.000001 via /home/aymen/radical.pilot.sandbox/rp.session.js-17-21.jetstream-cloud.org.aymen.018409.0009/pilot.0000/unit.000001//unit.000001.sh in /home/aymen/radical.pilot.sandbox/rp.session.js-17-21.jetstream-cloud.org.aymen.018409.0009/pilot.0000/unit.000001/
+1590611321.539 : agent_executing.0000 : 30206 : 139792881796864 : DEBUG    : Launching unit with FORK ().
+1590611321.539 : agent_executing.0000 : 30206 : 139792881796864 : DEBUG    : Created launch_script: /home/aymen/radical.pilot.sandbox/rp.session.js-17-21.jetstream-cloud.org.aymen.018409.0009/pilot.0000/unit.000002//unit.000002.sh
+1590611321.540 : agent_executing.0000 : 30206 : 139792881796864 : INFO     : Launching unit unit.000002 via /home/aymen/radical.pilot.sandbox/rp.session.js-17-21.jetstream-cloud.org.aymen.018409.0009/pilot.0000/unit.000002//unit.000002.sh in /home/aymen/radical.pilot.sandbox/rp.session.js-17-21.jetstream-cloud.org.aymen.018409.0009/pilot.0000/unit.000002/
+1590611321.545 : agent_executing.0000 : 30206 : 139792881796864 : DEBUG    : -> agent_executing_queue (3) [True ]: ?
+1590611321.546 : agent_executing.0000 : 30206 : 139792881796864 : DEBUG    : -> agent_executing_queue (3) [True ]: request 30206
+1590611341.632 : agent_executing.0000 : 30206 : 139792192894720 : INFO     : Unit unit.000000 has return code 0.
+1590611341.632 : agent_executing.0000 : 30206 : 139792192894720 : DEBUG    : advance bulk: 1 [True, True]
+1590611341.632 : agent_executing.0000 : 30206 : 139792192894720 : DEBUG    : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+1590611341.633 : agent_executing.0000 : 30206 : 139792192894720 : INFO     : Unit unit.000002 has return code 0.
+1590611341.633 : agent_executing.0000 : 30206 : 139792192894720 : DEBUG    : advance bulk: 1 [True, True]
+1590611341.633 : agent_executing.0000 : 30206 : 139792192894720 : DEBUG    : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+1590611341.634 : agent_executing.0000 : 30206 : 139792192894720 : INFO     : Unit unit.000001 has return code 0.
+1590611341.634 : agent_executing.0000 : 30206 : 139792192894720 : DEBUG    : advance bulk: 1 [True, True]
+1590611341.634 : agent_executing.0000 : 30206 : 139792192894720 : DEBUG    : put bulk AGENT_STAGING_OUTPUT_PENDING: 1
+1590611345.464 : agent_executing.0000 : 30206 : 139792528439040 : DEBUG    : command incoming: {'cmd': 'terminate', 'arg': None}
+1590611345.464 : agent_executing.0000 : 30206 : 139792528439040 : INFO     : got termination command
+1590611345.535 : agent_executing.0000 : 30206 : 139792528439040 : INFO     : stop agent_executing.0000 (30206 : Thread-2) [radical.pilot.utils.component.Popen._cancel_monitor_cb]
+1590611345.536 : agent_executing.0000 : 30206 : 139792528439040 : DEBUG    : _finalize()
+1590611345.536 : agent_executing.0000 : 30206 : 139792528439040 : DEBUG    : agent_executing.0000 close prof
+1590611345.606 : agent_executing.0000 : 30206 : 139792528439040 : INFO     : command_cb [control_pubsub]: {'cmd': 'terminate', 'arg': None}

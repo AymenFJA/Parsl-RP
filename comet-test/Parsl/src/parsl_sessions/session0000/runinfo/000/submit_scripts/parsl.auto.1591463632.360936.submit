@@ -1,0 +1,33 @@
+#!/bin/bash
+
+#SBATCH --job-name=parsl.auto.1591463632.360936
+#SBATCH --output=/home/aymen/parsl_scripts/parsl.auto.1591463632.360936.submit.stdout
+#SBATCH --error=/home/aymen/parsl_scripts/parsl.auto.1591463632.360936.submit.stderr
+#SBATCH --nodes=1
+#SBATCH --partition=debug
+#SBATCH --time=10
+#SBATCH --ntasks-per-node=1
+
+#SBATCH --exclusive
+
+
+source /home/aymen/parsl-env/bin/activate
+
+
+export JOBNAME="parsl.auto.1591463632.360936"
+
+export CORES=$(getconf _NPROCESSORS_ONLN)
+echo "Found cores : $CORES"
+WORKERCOUNT=1
+
+CMD ( ) {
+process_worker_pool.py --debug --max_workers=1 -p 0 -c 24 -m None --poll 10 --task_url=tcp://129.114.17.185:54790 --result_url=tcp://129.114.17.185:54817 --logdir=/home/aymen/parsl_scripts/comet_htex --block_id=0 --hb_period=30 --hb_threshold=120 
+}
+for COUNT in $(seq 1 1 $WORKERCOUNT)
+do
+    echo "Launching worker: $COUNT"
+    CMD &
+done
+wait
+echo "All workers done"
+

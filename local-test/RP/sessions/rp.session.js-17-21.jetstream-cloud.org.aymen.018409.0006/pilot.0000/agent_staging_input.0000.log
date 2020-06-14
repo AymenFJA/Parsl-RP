@@ -1,0 +1,36 @@
+1590609637.457 : agent_staging_input.0000 : 23440 : 140355606628096 : INFO     : connect pub to log_pubsub: tcp://172.27.61.10:40350
+1590609637.458 : agent_staging_input.0000 : 23440 : 140355606628096 : DEBUG    : registered publisher for log_pubsub
+1590609637.459 : agent_staging_input.0000 : 23440 : 140355606628096 : INFO     : connect pub to state_pubsub: tcp://172.27.61.10:32892
+1590609637.459 : agent_staging_input.0000 : 23440 : 140355606628096 : DEBUG    : registered publisher for state_pubsub
+1590609637.460 : agent_staging_input.0000 : 23440 : 140355606628096 : INFO     : connect pub to control_pubsub: tcp://172.27.61.10:36851
+1590609637.461 : agent_staging_input.0000 : 23440 : 140355606628096 : DEBUG    : registered publisher for control_pubsub
+1590609637.461 : agent_staging_input.0000 : 23440 : 140355606628096 : INFO     : connect sub to control_pubsub: tcp://172.27.61.10:39589
+1590609637.462 : agent_staging_input.0000 : 23440 : 140355606628096 : DEBUG    : ~~ control_pubsub: ?
+1590609637.462 : agent_staging_input.0000 : 23440 : 140355606628096 : DEBUG    : ~~ control_pubsub: control_pubsub
+1590609637.463 : agent_staging_input.0000 : 23440 : 140355606628096 : INFO     : connect get to agent_staging_input_queue: tcp://172.27.61.10:43625
+1590609637.480 : agent_staging_input.0000 : 23440 : 140355606628096 : DEBUG    : registered input agent_staging_input.0000.work.AGENT_STAGING_INPUT_PENDING
+1590609637.480 : agent_staging_input.0000 : 23440 : 140355606628096 : DEBUG    : agent_staging_input.0000 register input AGENT_STAGING_INPUT_PENDING: agent_staging_input.0000.work.AGENT_STAGING_INPUT_PENDING
+1590609637.481 : agent_staging_input.0000 : 23440 : 140355606628096 : DEBUG    : registered worker work [AGENT_STAGING_INPUT_PENDING]
+1590609637.481 : agent_staging_input.0000 : 23440 : 140355606628096 : DEBUG    : agent_staging_input.0000 register output AGENT_SCHEDULING_PENDING:agent_scheduling_queue
+1590609637.482 : agent_staging_input.0000 : 23440 : 140355606628096 : DEBUG    : -> agent_staging_input_queue (3) [True ]: ?
+1590609637.482 : agent_staging_input.0000 : 23440 : 140355606628096 : DEBUG    : -> agent_staging_input_queue (3) [True ]: request 23440
+1590609637.558 : agent_staging_input.0000 : 23440 : 140355778680576 : DEBUG    : start heartbeat
+1590609637.559 : agent_staging_input.0000 : 23440 : 140355778680576 : INFO     : connect sub to heartbeat: tcp://172.27.61.10:38345
+1590609637.560 : agent_staging_input.0000 : 23440 : 140355778680576 : DEBUG    : ~~ heartbeat: ?
+1590609637.560 : agent_staging_input.0000 : 23440 : 140355778680576 : DEBUG    : ~~ heartbeat: heartbeat
+1590609640.463 : agent_staging_input.0000 : 23440 : 140355606628096 : DEBUG    : <- agent_staging_input_queue (3) [False]: unit.000000 [AGENT_STAGING_INPUT_PENDING]
+1590609640.463 : agent_staging_input.0000 : 23440 : 140355606628096 : DEBUG    : <- agent_staging_input_queue (3) [False]: unit.000001 [AGENT_STAGING_INPUT_PENDING]
+1590609640.463 : agent_staging_input.0000 : 23440 : 140355606628096 : DEBUG    : <- agent_staging_input_queue (3) [False]: unit.000002 [AGENT_STAGING_INPUT_PENDING]
+1590609640.464 : agent_staging_input.0000 : 23440 : 140355606628096 : DEBUG    : got unit (unit.000000)
+1590609640.464 : agent_staging_input.0000 : 23440 : 140355606628096 : DEBUG    : got unit (unit.000001)
+1590609640.464 : agent_staging_input.0000 : 23440 : 140355606628096 : DEBUG    : got unit (unit.000002)
+1590609640.464 : agent_staging_input.0000 : 23440 : 140355606628096 : DEBUG    : advance bulk: 3 [False, True]
+1590609640.465 : agent_staging_input.0000 : 23440 : 140355606628096 : DEBUG    : advance bulk: 3 [True, True]
+1590609640.465 : agent_staging_input.0000 : 23440 : 140355606628096 : DEBUG    : put bulk AGENT_SCHEDULING_PENDING: 3
+1590609640.466 : agent_staging_input.0000 : 23440 : 140355606628096 : DEBUG    : -> agent_staging_input_queue (3) [True ]: ?
+1590609640.466 : agent_staging_input.0000 : 23440 : 140355606628096 : DEBUG    : -> agent_staging_input_queue (3) [True ]: request 23440
+1590609664.532 : agent_staging_input.0000 : 23440 : 140355462735616 : DEBUG    : command incoming: {'cmd': 'terminate', 'arg': None}
+1590609664.532 : agent_staging_input.0000 : 23440 : 140355462735616 : INFO     : got termination command
+1590609664.613 : agent_staging_input.0000 : 23440 : 140355462735616 : INFO     : stop agent_staging_input.0000 (23440 : Thread-2) [radical.pilot.utils.component.Default._cancel_monitor_cb]
+1590609664.613 : agent_staging_input.0000 : 23440 : 140355462735616 : DEBUG    : _finalize()
+1590609664.613 : agent_staging_input.0000 : 23440 : 140355462735616 : DEBUG    : agent_staging_input.0000 close prof
