@@ -12,7 +12,7 @@ def stamp_to_num(ss):
 def get_session_tstamps():
         
         dur = list()
-        line = "/home/aymen/RADICAL/test/Parsl-RP/comet-test/Parsl/parsl_sessions"
+        line = "/home/aymen/SummerRadical/Parsl-RP/comet-test/Parsl/parsl_sessions"
         cmd =  "find %s -iname 'interchange.log'" %line
         paths = [line for line in subprocess.check_output(cmd , shell=True).splitlines()]
         for f in range(len(paths)):
@@ -25,6 +25,3 @@ def get_session_tstamps():
                 dur.append(stamp_to_num(l) - stamp_to_num(f))
         print (dur)
         return dur
-
-
-get_session_tstamps()
