@@ -12,7 +12,7 @@ def stamp_to_num(ss):
 def get_session_tstamps():
         
         dur  = list()
-        line = "/home/aymen/SummerRadical/Parsl-RP/comet-test/Parsl/parsl_sessions"
+        line = "/home/aymen/RADICAL/Parsl-RP/comet-test/Parsl/parsl_sessions"
         cmd  =  "find %s -iname 'interchange.log'" %line
         paths = [line for line in subprocess.check_output(cmd , shell=True).splitlines()]
         for f in range(len(paths)):
@@ -29,7 +29,7 @@ def get_session_tstamps():
 def get_workers_tstamps():
         
         dur = list()
-        line = '/home/aymen/SummerRadical/Parsl-RP/comet-test/Parsl/parsl_sessions'
+        line = '/home/aymen/RADICAL/Parsl-RP/comet-test/Parsl/parsl_sessions'
         cmd  =  "find %s -iname 'worker_*.log'" %line
         paths = [line for line in subprocess.check_output(cmd , shell=True).splitlines()]
         for f in range(len(paths)):
@@ -46,7 +46,7 @@ def get_workers_tstamps():
 def get_manager_tstamps():
 
         dur  = list()
-        line ='/home/aymen/SummerRadical/Parsl-RP/comet-test/Parsl/parsl_sessions'
+        line ='/home/aymen/RADICAL/Parsl-RP/comet-test/Parsl/parsl_sessions'
         cmd  =  "find %s -iname 'manager.log'" %line
         paths = [line for line in subprocess.check_output(cmd , shell=True).splitlines()]
         for f in range(len(paths)):
