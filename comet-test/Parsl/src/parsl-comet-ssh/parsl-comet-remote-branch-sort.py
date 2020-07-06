@@ -40,7 +40,7 @@ config = Config(
                 # launcher=SrunLauncher(),
                 scheduler_options='',     # Input your scheduler_options if needed
                 #worker_init='conda activate /oasis/projects/nsf/unc100/aymen/anaconda3/envs/parsl-env',     # Input your worker_init if needed
-                worker_init='source parsl-env/bin/activate',
+                worker_init='source /home/aymen/ve/parsl-env/bin/activate',
                 walltime="00:10:00",
                 init_blocks=1,
                 max_blocks=1,
@@ -60,7 +60,7 @@ config = Config(
     ],
 strategy=None,
 )
-os.environ['SSH_AUTH_SOCK'] ='/tmp/ssh-zJpG5aVnTM/agent.1985'
+#os.environ['SSH_AUTH_SOCK'] ='/tmp/ssh-zJpG5aVnTM/agent.1985'
 
 parsl.load(config)
 

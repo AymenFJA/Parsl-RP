@@ -23,11 +23,11 @@ config = Config(
             #workers_per_node = 24, # Getting error for unexpexted argument
             cores_per_worker=1,
             worker_logdir_root = '/home/aymen/parsl_scripts',
-            interchange_address='comet-ln2.sdsc.edu',
+            interchange_address= 'comet-ln2.sdsc.edu', #'js-17-185.jetstream-cloud.org','comet-ln2.sdsc.edu',
             interchange_port_range=(50000, 50400),
             worker_port_range=(50500, 51000),
             provider=SlurmProvider(
-                #'compute',
+                'debug',
                 channel=SSHChannel(
                     hostname='comet-ln2.sdsc.edu',
                     username='aymen',     # Please replace USERNAME with your username
@@ -36,8 +36,9 @@ config = Config(
                 ),
                 #launcher=SrunLauncher(),
                 scheduler_options='',     # Input your scheduler_options if needed
-                worker_init='source parsl-env/bin/activate',     # Input your worker_init if needed
-                partition = "debug",
+                worker_init='source ve/parsl-env/bin/activate',     # Input your worker_init if needed
+                #worker_init='source activate /oasis/projects/nsf/unc100/aymen/anaconda3/envs/conda-parsl',
+                #partition = "debug",
                 walltime="00:10:00",
                 init_blocks=1,
                 max_blocks=1,
@@ -46,7 +47,7 @@ config = Config(
                 #cores_per_node=24, # Getting error for unexpexted argument
                 parallelism=24,
             ),
-            working_dir="/home/aymen/parsl_scripts",
+            #working_dir="/home/aymen/parsl_scripts",
         )
     ],
 strategy=None,
