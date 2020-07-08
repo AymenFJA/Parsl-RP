@@ -42,10 +42,10 @@ In this reposirory, we are studying the scaling performance of 2 systems [RADICA
 |session0001.1N | 24/24            | 1       |  300s           |  304.0         |
 |session0002.1N | 24/24            | 1       |  300s           |  302.0         |
 |session0003.1N | 24/24            | 1       |  300s           |  302.0         |
-|session0000.72N| 1728/1728        | 72      |  300s           |  498.0         |
-|session0001.72N| 1728/1728        | 72      |  300s           |  433.0         |
-|session0002.72N| 1728/1728        | 72      |  300s           |  498.0         |
-|session0003.72N| 1728/1728        | 72      |  300s           |  561.0         |
+|session0000.72N| 1728/1728        | 72      |  300s           |  392.0         |
+|session0001.72N| 1728/1728        | 72      |  300s           |  363.0         |
+|session0002.72N| 1728/1728        | 72      |  300s           |  385.0         |
+|session0003.72N| 1728/1728        | 72      |  300s           |  391.0         |
 
 ## Strong Scaling
 
