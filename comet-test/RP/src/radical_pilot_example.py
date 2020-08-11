@@ -56,7 +56,7 @@ if __name__ == '__main__':
                    'project'       : 'unc100',
                    'queue'         : 'compute',
                    'access_schema' : 'gsissh',
-                   'cores'         : 1728,
+                   'cores'         : 864,
                    'gpus'          : 0,
                   }
         pdesc = rp.ComputePilotDescription(pd_init)
@@ -64,7 +64,7 @@ if __name__ == '__main__':
         # Launch the pilot.
         pilot = pmgr.submit_pilots(pdesc)
 
-        n = 1728  # number of units to run
+        n = 864 # number of units to run
         report.header('submit %d units' % n)
 
         # Register the ComputePilot in a UnitManager object.
