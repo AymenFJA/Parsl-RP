@@ -24,14 +24,10 @@ if __name__ == '__main__':
     report = ru.Reporter(name='radical.pilot')
     report.title('Getting Started (RP version %s)' % rp.version)
 
-    # use the resource specified as argument, fall back to localhost
-    if   len(sys.argv)  > 2: report.exit('Usage:\t%s [resource]\n\n' % sys.argv[0])
-    elif len(sys.argv) == 2: resource = sys.argv[1]
-    else                   : resource = 'local.localhost'
 
     # Create a new session. No need to try/except this: if session creation
     # fails, there is not much we can do anyways...
-    session = rp.Session()
+    session = rp.Session(uid=ru.generate_id('rp.session.ws.72N.%(item_counter)04d', mode=ru.ID_CUSTOM))
 
     # all other pilot code is now tried/excepted.  If an exception is caught, we
     # can rely on the session object to exist and be valid, and we can thus tear
@@ -56,7 +52,7 @@ if __name__ == '__main__':
                    'project'       : 'unc100',
                    'queue'         : 'compute',
                    'access_schema' : 'gsissh',
-                   'cores'         : 864,
+                   'cores'         :  1728,
                    'gpus'          : 0,
                   }
         pdesc = rp.ComputePilotDescription(pd_init)
@@ -64,7 +60,7 @@ if __name__ == '__main__':
         # Launch the pilot.
         pilot = pmgr.submit_pilots(pdesc)
 
-        n = 864 # number of units to run
+        n = 1728  #number of units to run
         report.header('submit %d units' % n)
 
         # Register the ComputePilot in a UnitManager object.
@@ -80,12 +76,13 @@ if __name__ == '__main__':
             # create a new CU description, and fill it.
             # Here we don't use dict initialization.
             cud = rp.ComputeUnitDescription()
-            cud.executable    = '/home/aymen/stress-ng/stress-ng --cpu 1 --timeout 300'
+            cud.executable    = '/home/aymen/stress-ng/stress-ng --cpu 1 --timeout 300 --metrics-brief'
             cud.cpu_processes = 1
             cuds.append(cud)
             report.progress()
 
         report.progress_done()
+        #pilot.wait([rp.PMGR_ACTIVE])
 
         # Submit the previously created ComputeUnit descriptions to the
         # PilotManager. This will trigger the selected scheduler to start
