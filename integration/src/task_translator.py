@@ -6,15 +6,15 @@ parsl_task_description = [executable, self.tasks[task_id]['resource_specificatio
 
 class TaskTranslator(object):
         """
-        -------------------------------------------------------------------------------------------------------------------------
-         ParSL API                       |                   | ParSL DFK/dflow |                     |      Task Translator      
-        ---------------------------------|                   |-----------------|                     |---------------------------
-                                         |                   |                 |                     |                           
-         parsl_tasks_description ------>  ParSL_tasks{}--->    Dep. check       --> ParSL_tasks{} -->      ParSL Task/Tasks desc.
-                                         |                   | Data management |                     |             |             
-                                         |                   |                 |                     |             v             
-                                         |                   |                 |                     |     RP Unit/Units desc.   
-        -------------------------------------------------------------------------------------------------------------------------
+        ----------------------------------------------------------------------------------------------------------------------------------------------------
+                        ParSL API                          |         ParSL DFK/dflow               |      Task Translator      |     RP-Client/Unit-Manager
+        ---------------------------------------------------|---------------------------------------|---------------------------|----------------------------                                                     
+                                                           |                                       |                           |
+         parsl_tasks_description ------>  ParSL_tasks{}----+-> Dep. check ------> ParSL_tasks{} ---+--> ParSL Task/Tasks desc. | umgr.submit_units(RP_units)
+                                           +api.submit     | Data management          +dfk.submit  |             |             |
+                                                           |                                       |             v             |
+                                                           |                                       |     RP Unit/Units desc. --+->   
+        ----------------------------------------------------------------------------------------------------------------------------------------------------
         """        
 
     def __init__(self):
