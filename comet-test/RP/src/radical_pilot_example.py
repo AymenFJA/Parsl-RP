@@ -27,7 +27,7 @@ if __name__ == '__main__':
 
     # Create a new session. No need to try/except this: if session creation
     # fails, there is not much we can do anyways...
-    session = rp.Session(uid=ru.generate_id('rp.session.ws.72N.%(item_counter)04d', mode=ru.ID_CUSTOM))
+    session = rp.Session(uid=ru.generate_id('rp.session.ss.18N.%(item_counter)04d', mode=ru.ID_CUSTOM))
 
     # all other pilot code is now tried/excepted.  If an exception is caught, we
     # can rely on the session object to exist and be valid, and we can thus tear
@@ -47,12 +47,12 @@ if __name__ == '__main__':
         # Define an [n]-core local pilot that runs for [x] minutes
         # Here we use a dict to initialize the description object
         pd_init = {'resource'      : 'xsede.comet_ssh',
-                   'runtime'       : 30,  # pilot runtime (min)
+                   'runtime'       : 600,  # pilot runtime (min)
                    'exit_on_error' : True,
                    'project'       : 'unc100',
                    'queue'         : 'compute',
                    'access_schema' : 'gsissh',
-                   'cores'         :  1728,
+                   'cores'         :  432,
                    'gpus'          : 0,
                   }
         pdesc = rp.ComputePilotDescription(pd_init)
