@@ -62,7 +62,7 @@ We fix the maximum amount of tasks we are able to run from the weak scaling expe
 ## RADICAL-Pilot:
 | Session ID       | # Tasks/# Cores  | # Nodes | Theoritical TTX | Calculated TTX |
 |------------------|------------------|---------|-----------------|----------------|
-|rp.ss.18N.0001    | 1728/24          | 1       |                 |                |
-|rp.ss.18N.0001    | 1728/48          | 2       |                 |                |
+|rp.ss.1N.0001     | 1728/24          | 1       |                 |                |
+|rp.ss.2N.0001     | 1728/48          | 2       |                 |                |
 |rp.ss.18N.0001    | 1728/432         | 18      |                 |                |
-|rp.ss.18N.0001    | 1728/864         | 36      |                 |                |
+|rp.ss.36N.0001    | 1728/864         | 36      |                 |                |
