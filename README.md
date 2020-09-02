@@ -1,7 +1,6 @@
 # Use Case Requirements
 
-Following [This work can be viewed here as part of Aymen-Matteo supervision](https://docs.google.com/document/d/1GNeHzy-5H5JRo2VR5Gdu6m4NxN1OPv0SX8JIcaESbi0/edit?pli=1#heading=h.nrnw03t7conb).
-
+### TBD....
 
 # Experiments Specification
 
@@ -12,14 +11,15 @@ In this reposirory, we are studying the scaling performance of 2 systems [RADICA
 | Experiment ID | # Tasks  | # Nodes | # Cores/t  | Runtime/t |
 |---------------|----------|---------|------------|-----------|
 | 1             | 24       | 1       | 24         |  300s     |
-| 2             | 1728     | 72      | 1728       |  300s     |
+| 2             | 48       | 48      | 48         |  300s     |
+| 3             | 432      | 36      | 432        |  300s     |
+| 4             | 1728     | 72      | 1728       |  300s     |
 
 
 
 - n number of tasks depends on the number of cores of (24 cores per node).
 - Tasks are homogeneous.
 - The executablke is a single `stress-ng` that runs for `300s` or `5m` on a single core.
-- The number of cores is just a function of the number of GPUs that each task requires.
 
 ## PaRsL:
 | Session ID    | # Tasks/# Cores  | # Nodes | Theoritical TTX | Calculated TTX |
@@ -51,5 +51,18 @@ In this reposirory, we are studying the scaling performance of 2 systems [RADICA
 
 We fix the maximum amount of tasks we are able to run from the weak scaling experiments (1728) and we increase the number of cores by a factor sed for the weak scaling experiments. We then run these tasks on a progressively large amount of resources until we get to full concurrency as run in the weak scaling experiments.
 
+## PaRsL:
+| Session ID       | # Tasks/# Cores  | # Nodes | Theoritical TTX | Calculated TTX |
+|------------------|------------------|---------|-----------------|----------------|
+|parsl.ss.18N.0001 | 1728/24          | 1       |                 |                |
+|parsl.ss.18N.0001 | 1728/48          | 2       |                 |                |
+|parsl.ss.18N.0001 | 1728/432         | 18      |                 |                |
+|parsl.ss.18N.0001 | 1728/864         | 36      |                 |                |
 
-### TBD.....!
+## RADICAL-Pilot:
+| Session ID       | # Tasks/# Cores  | # Nodes | Theoritical TTX | Calculated TTX |
+|------------------|------------------|---------|-----------------|----------------|
+|rp.ss.18N.0001    | 1728/24          | 1       |                 |                |
+|rp.ss.18N.0001    | 1728/48          | 2       |                 |                |
+|rp.ss.18N.0001    | 1728/432         | 18      |                 |                |
+|rp.ss.18N.0001    | 1728/864         | 36      |                 |                |
