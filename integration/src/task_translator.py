@@ -3,7 +3,7 @@ import radical.utils as ru
 
 #This is a simple python dictionary
 
-tasks = {'task1000':{
+tasks = {'1000':{
                     'status':'TBD',#---------------> Status of the task faile/sucess
                     'app_fu':'TBD',#---------------> Function/executable to be executed
                     'hashsum':'TBD',#--------------> Need to be invistagated
@@ -16,7 +16,7 @@ tasks = {'task1000':{
                                                     'disk': 1000}}}
 
 
-task_id = 'task0001'
+task_id = '1000'
 parsl_task_description = [executable, self.tasks[task_id]['resource_specification'], *args, **kwargs]
 
 class TaskTranslator(object):
@@ -36,7 +36,30 @@ class TaskTranslator(object):
 
         pass
 
+   
+    def start():
+        """Create RADICAL-executor session and Pilot descrption"""
+       
+        pass
+
+    def shutdown():
+        """Shutdown the RADICAL-executor, including all RADICAL-Pilot components"""
+ 
+        pass
+
+   def submit():
+       """Submit the cuds to the RADICAL-executor unit_manager component"""
+
+       pass
+
+   def scale_in():
+       "TBD"
+
+       pass
+
+
     def task_translator(self, parsl_task_description):
+        "Convert ParSL tasks = {} to RADICAL-Pilot cuds and return them" 
 
         cud = rp.ComputeUnitDescription()
         cuds = list()
