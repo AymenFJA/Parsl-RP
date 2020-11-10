@@ -6,6 +6,11 @@
 
 In this reposirory, we are studying the scaling performance of 2 systems [RADICAL-Pilot](https://github.com/radical-cybertools/radical.pilot) and [PaRsL Highthroughput executor (HTEX)](https://github.com/Parsl/parsl/tree/master/parsl/executors). The expirements varies from 1-72 nodes (24 cores per node) on comet. 
 
+Links for the integration work progress:
+
+- 1 [RP-Parsl integration details](https://docs.google.com/document/d/1Z5hu-M8ynCmIum7KFFAyENn3CUNM9NhG9cjw-gWjriA/edit?usp=sharing)
+- 2 [RP-Parsl High level](https://docs.google.com/document/d/1vm3C3ESE6S-C5zFd_mJs9lybQQO521k8RNh16qn2078/edit?usp=sharing)
+
 ## Weak Scaling Non-MPI wokload
 
 | Experiment ID | # Tasks  | # Nodes | # Cores/t  | Runtime/t |
